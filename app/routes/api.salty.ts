@@ -29,20 +29,23 @@ const Body = z
 /**
  * Salty's brain, picked from whichever key is set:
  *   ANTHROPIC_API_KEY                  → Claude (default model claude-haiku-5-5)
- *   GEMINI_API_KEY                     → Google Gemini, free tier available (default model gemini-3.8-flash)
+ *   GEMINI_API_KEY                     → Google Gemini, free tier available (tries gemini-3.5-flash-lite, then 3.6 Flash, then 3.8 Flash)
  *   AI_API_KEY + AI_BASE_URL + SALTY_MODEL → any OpenAI-compatible service (Groq, OpenRouter, …)
  * None set → demo replies.
  */
 const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai";
-type Provider =
-  | { kind: "anthropic"; apiKey: string; model: string }
-  | { kind: "openai-compatible"; apiKey: string; baseUrl: string; model: string };
+type Provider = { kind: "anthropic"; apiKey: string; model: string } | { kind: "openai-compatible"; apiKey: string; baseUrl: string; model: string };
 
 function pickProvider(): Provider | null {
   const env = process.env;
   if (env.ANTHROPIC_API_KEY) return { kind: "anthropic", apiKey: env.ANTHROPIC_API_KEY, model: env.SALTY_MODEL || "claude-haiku-5-5" };
   if (env.GEMINI_API_KEY)
-    return { kind: "openai-compatible", apiKey: env.GEMINI_API_KEY, baseUrl: GEMINI_BASE_URL, model: env.SALTY_MODEL || "gemini-3.8-flash" };
+    return {
+      kind: "openai-compatible",
+      apiKey: env.GEMINI_API_KEY,
+      baseUrl: GEMINI_BASE_URL,
+      model: env.SALTY_MODEL || "gemini-3.5-flash-lite,gemini-3.6-flash,gemini-3.8-flash",
+    };
   if (env.AI_API_KEY && env.AI_BASE_URL && env.SALTY_MODEL)
     return { kind: "openai-compatible", apiKey: env.AI_API_KEY, baseUrl: env.AI_BASE_URL.replace(/\/+$/, ""), model: env.SALTY_MODEL };
   return null;
@@ -147,22 +150,57 @@ async function claudeStream(p: Extract<Provider, { kind: "anthropic" }>, body: B
 /** Gemini (and other OpenAI-compatible services): chat completions streamed as server-sent events. */
 async function openAiCompatibleStream(p: Extract<Provider, { kind: "openai-compatible" }>, body: Body): Promise<Streamed> {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 30_000);
-  const res = await fetch(`${p.baseUrl}/chat/completions`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: `Bearer ${p.apiKey}` },
-    body: JSON.stringify({
-      model: p.model,
-      stream: true,
-      max_tokens: 500,
-      messages: [
-        { role: "system", content: `${SALTY_RULES}\n\nKNOWLEDGE\n${knowledgePack()}\n\n${contextNote(body)}` },
-        ...body.messages,
-      ],
-    }),
-    signal: controller.signal,
-  }).finally(() => clearTimeout(timeout));
-  if (!res.ok || !res.body) throw new Error(`${p.baseUrl} answered ${res.status}: ${(await res.text().catch(() => "")).slice(0, 300)}`);
+  const startedAt = Date.now();
+  const timeout = setTimeout(() => controller.abort(new Error(`no answer from ${p.baseUrl} within 55s`)), 55_000);
+  const messages = [{ role: "system", content: `${SALTY_RULES}\n\nKNOWLEDGE\n${knowledgePack()}\n\n${contextNote(body)}` }, ...body.messages];
+  // SALTY_MODEL can list several models: when one is overloaded or out of free quota, try the next.
+  const models = p.model
+    .split(",")
+    .map((m) => m.trim())
+    .filter(Boolean);
+  const failures: string[] = [];
+  let res: Response | undefined;
+  try {
+    for (const model of models) {
+      // Each model gets 15s to start answering; an overloaded one sometimes never does.
+      const attemptCtl = new AbortController();
+      const attemptTimer = setTimeout(() => attemptCtl.abort(new Error("no answer within 15s")), 15_000);
+      let attempt: Response;
+      try {
+        attempt = await fetch(`${p.baseUrl}/chat/completions`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Authorization: `Bearer ${p.apiKey}` },
+          body: JSON.stringify({
+            model,
+            stream: true,
+            max_tokens: 800,
+            // Gemini's newer models think before answering by default, which delays the first word. Salty's
+            // answers come from the knowledge pack, so light thinking is enough. Other services may not accept it.
+            ...(p.baseUrl === GEMINI_BASE_URL ? { reasoning_effort: "low" } : {}),
+            messages,
+          }),
+          signal: AbortSignal.any([controller.signal, attemptCtl.signal]),
+        });
+      } catch (e) {
+        if (controller.signal.aborted || !attemptCtl.signal.aborted) throw e;
+        failures.push(`${model}: no answer within 15s`);
+        continue;
+      } finally {
+        clearTimeout(attemptTimer);
+      }
+      if (attempt.ok && attempt.body) {
+        console.log(`salty: ${model} answered in ${Date.now() - startedAt}ms${failures.length ? ` (after ${failures.join("; ")})` : ""}`);
+        res = attempt;
+        break;
+      }
+      failures.push(`${model} ${attempt.status}: ${(await attempt.text().catch(() => "")).replace(/\s+/g, " ").slice(0, 200)}`);
+      // A rejected key fails the same way for every model.
+      if (attempt.status === 401 || attempt.status === 403) break;
+    }
+  } finally {
+    clearTimeout(timeout);
+  }
+  if (!res?.body) throw new Error(`${p.baseUrl} failed after ${Date.now() - startedAt}ms: ${failures.join(" | ")}`);
   const reader = res.body.pipeThrough(new TextDecoderStream()).getReader();
 
   return {
