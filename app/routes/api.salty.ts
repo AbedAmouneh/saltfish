@@ -26,7 +26,27 @@ const Body = z
   })
   .refine((b) => !b.table || (!!b.branch && b.table <= getBranch(b.branch).tables), "table");
 
-const MODEL = process.env.SALTY_MODEL ?? "claude-haiku-5-5";
+/**
+ * Salty's brain, picked from whichever key is set:
+ *   ANTHROPIC_API_KEY                  → Claude (default model claude-haiku-5-5)
+ *   GEMINI_API_KEY                     → Google Gemini, free tier available (default model gemini-3.8-flash)
+ *   AI_API_KEY + AI_BASE_URL + SALTY_MODEL → any OpenAI-compatible service (Groq, OpenRouter, …)
+ * None set → demo replies.
+ */
+const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai";
+type Provider =
+  | { kind: "anthropic"; apiKey: string; model: string }
+  | { kind: "openai-compatible"; apiKey: string; baseUrl: string; model: string };
+
+function pickProvider(): Provider | null {
+  const env = process.env;
+  if (env.ANTHROPIC_API_KEY) return { kind: "anthropic", apiKey: env.ANTHROPIC_API_KEY, model: env.SALTY_MODEL || "claude-haiku-5-5" };
+  if (env.GEMINI_API_KEY)
+    return { kind: "openai-compatible", apiKey: env.GEMINI_API_KEY, baseUrl: GEMINI_BASE_URL, model: env.SALTY_MODEL || "gemini-3.8-flash" };
+  if (env.AI_API_KEY && env.AI_BASE_URL && env.SALTY_MODEL)
+    return { kind: "openai-compatible", apiKey: env.AI_API_KEY, baseUrl: env.AI_BASE_URL.replace(/\/+$/, ""), model: env.SALTY_MODEL };
+  return null;
+}
 /** Per table (or per phone off-site), per connection, and for the whole site per day. */
 const MESSAGES_PER_10_MIN = 20;
 const CONNECTION_PER_10_MIN = 150; // a full restaurant shares one Wi-Fi address
@@ -37,7 +57,7 @@ const text = (body: string, status = 200) =>
 
 /**
  * POST /api/salty → streams Salty's reply as plain text.
- * Without ANTHROPIC_API_KEY (local development) it streams a demo reply.
+ * Without any AI key (local development) it streams a demo reply.
  */
 export async function action({ request }: ActionFunctionArgs) {
   if (request.method !== "POST") return text("Method not allowed", 405);
@@ -65,17 +85,17 @@ export async function action({ request }: ActionFunctionArgs) {
     return text("Salty is unavailable", 503);
   }
 
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) return demoStream(body.messages.at(-1)!.content);
+  const provider = pickProvider();
+  if (!provider) return demoStream(body.messages.at(-1)!.content);
 
-  const client = new Anthropic({ apiKey });
-  // Open the stream before answering, so a bad key, an outage or an overload becomes a clean 503
+  // Open the stream before answering, so a bad key, an outage or a used-up quota becomes a clean 503
   // the chat can show, instead of an unhandled error halfway through the response.
-  let stream: Awaited<ReturnType<typeof openStream>>;
+  let chunks: AsyncIterable<string>;
+  let abort: () => void;
   try {
-    stream = await openStream(client, body);
+    ({ chunks, abort } = provider.kind === "anthropic" ? await claudeStream(provider, body) : await openAiCompatibleStream(provider, body));
   } catch (e) {
-    logError("salty request failed", e);
+    logError(`salty request failed (${provider.kind})`, e);
     return text("Salty is unavailable", 503);
   }
 
@@ -83,9 +103,7 @@ export async function action({ request }: ActionFunctionArgs) {
   const readable = new ReadableStream<Uint8Array>({
     async start(controller) {
       try {
-        for await (const event of stream) {
-          if (event.type === "content_block_delta" && event.delta.type === "text_delta") controller.enqueue(encoder.encode(event.delta.text));
-        }
+        for await (const chunk of chunks) controller.enqueue(encoder.encode(chunk));
         controller.close();
       } catch (e) {
         logError("salty stream failed", e);
@@ -93,16 +111,20 @@ export async function action({ request }: ActionFunctionArgs) {
       }
     },
     cancel() {
-      stream.controller.abort();
+      abort();
     },
   });
   return new Response(readable, { headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store", "X-Accel-Buffering": "no" } });
 }
 
-function openStream(client: Anthropic, body: z.infer<typeof Body>) {
-  return client.messages.create({
+type Streamed = { chunks: AsyncIterable<string>; abort: () => void };
+type Body = z.infer<typeof Body>;
+
+async function claudeStream(p: Extract<Provider, { kind: "anthropic" }>, body: Body): Promise<Streamed> {
+  const client = new Anthropic({ apiKey: p.apiKey });
+  const stream = await client.messages.create({
     stream: true,
-    model: MODEL,
+    model: p.model,
     max_tokens: 500,
     system: [
       { type: "text", text: SALTY_RULES },
@@ -112,6 +134,61 @@ function openStream(client: Anthropic, body: z.infer<typeof Body>) {
     ],
     messages: body.messages,
   });
+  return {
+    chunks: (async function* () {
+      for await (const event of stream) {
+        if (event.type === "content_block_delta" && event.delta.type === "text_delta") yield event.delta.text;
+      }
+    })(),
+    abort: () => stream.controller.abort(),
+  };
+}
+
+/** Gemini (and other OpenAI-compatible services): chat completions streamed as server-sent events. */
+async function openAiCompatibleStream(p: Extract<Provider, { kind: "openai-compatible" }>, body: Body): Promise<Streamed> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 30_000);
+  const res = await fetch(`${p.baseUrl}/chat/completions`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${p.apiKey}` },
+    body: JSON.stringify({
+      model: p.model,
+      stream: true,
+      max_tokens: 500,
+      messages: [
+        { role: "system", content: `${SALTY_RULES}\n\nKNOWLEDGE\n${knowledgePack()}\n\n${contextNote(body)}` },
+        ...body.messages,
+      ],
+    }),
+    signal: controller.signal,
+  }).finally(() => clearTimeout(timeout));
+  if (!res.ok || !res.body) throw new Error(`${p.baseUrl} answered ${res.status}: ${(await res.text().catch(() => "")).slice(0, 300)}`);
+  const reader = res.body.pipeThrough(new TextDecoderStream()).getReader();
+
+  return {
+    chunks: (async function* () {
+      let buffer = "";
+      for (;;) {
+        const { value, done } = await reader.read();
+        if (done) return;
+        buffer += value;
+        const lines = buffer.split("\n");
+        buffer = lines.pop() ?? "";
+        for (const line of lines) {
+          const data = line.trim();
+          if (!data.startsWith("data:")) continue;
+          const payload = data.slice(5).trim();
+          if (payload === "[DONE]") return;
+          const delta = JSON.parse(payload)?.choices?.[0]?.delta?.content;
+          if (typeof delta === "string" && delta) yield delta;
+        }
+      }
+    })(),
+    abort: () => {
+      reader.cancel().catch(() => {});
+      controller.abort();
+    },
+  };
 }
 
 export function loader() {
@@ -120,7 +197,7 @@ export function loader() {
 
 /** Local development without an API key: a short scripted reply, streamed like the real thing. */
 function demoStream(question: string) {
-  const reply = `(Demo mode: add ANTHROPIC_API_KEY to talk to the real Salty.) You asked: "${question.slice(0, 120)}". Try the Zaatar White Fish Tiradito ($24) and a Salmon Handroll ($11), or [book a counter seat](/book?seating=counter). 🐟`;
+  const reply = `(Demo mode: add GEMINI_API_KEY or ANTHROPIC_API_KEY to talk to the real Salty.) You asked: "${question.slice(0, 120)}". Try the Zaatar White Fish Tiradito ($24) and a Salmon Handroll ($11), or [book a counter seat](/book?seating=counter). 🐟`;
   const encoder = new TextEncoder();
   const words = reply.split(/(?<= )/);
   return new Response(

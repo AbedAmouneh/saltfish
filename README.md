@@ -109,7 +109,7 @@ research/       research notes, menu capture, Instagram originals
 | Public site | `/`, `/menu`, `/menu/drinks`, `/naccache`, `/faqra`, `/events`, `/story`, `/play` | EN at `/`, Arabic at `/ar/…`, French at `/fr/…`, all prerendered                                                                                                            |
 | Bookings    | `/book` → `/booking/<id>`                                                         | Saved as **pending**, guest sends it on WhatsApp, staff confirm in `/staff`; the guest's status page updates                                                                |
 | Table mode  | `/t/<branch>/<table>`                                                             | The QR on each table. Menu with "My picks" to show the waiter, games, Salty, feedback. Opens in the phone's language                                                        |
-| Salty       | Floating button on the site, tab in table mode                                    | AI host on the Claude API, knows the menu/branches/events from the JSON files. Streams replies; demo mode without an API key                                                |
+| Salty       | Floating button on the site, tab in table mode                                    | AI host on Claude or Gemini (free tier), knows the menu/branches/events from the JSON files. Streams replies; demo mode without an API key                                               |
 | Games       | `/play`, table mode                                                               | Handroll Rush, Catch of the Day, Salt or Fish? Leaderboards tonight / week / all time, per branch at the tables. Signed tickets reject impossible scores                    |
 | Staff       | `/staff`                                                                          | Bookings (confirm / decline → one-tap WhatsApp reply in the guest's language), Feedback (low scores flagged), QR codes (printable, 20 per branch), Scores (hide rude names) |
 
@@ -120,7 +120,11 @@ See `.env.example`. On Vercel, add them under Project → Settings → Environme
 - `DATABASE_URL`: add a Neon database from Vercel → Storage; tables are created automatically on first use
 - `SESSION_SECRET`: any long random string
 - `STAFF_PASSWORD` (managers), and optionally `STAFF_PASSWORD_NACCACHE` / `STAFF_PASSWORD_FAQRA`
-- `ANTHROPIC_API_KEY`: from the Claude Console, with a monthly spend limit
+- Salty's AI, one of:
+  - `GEMINI_API_KEY`: free from Google AI Studio (aistudio.google.com, no card). The free tier has daily request limits
+    and Google may use free-tier prompts to improve its products, so move to a paid key or Claude for launch
+  - `ANTHROPIC_API_KEY`: from the Claude Console, with a monthly spend limit (used first when set)
+  - `AI_API_KEY` + `AI_BASE_URL` + `SALTY_MODEL`: any OpenAI-compatible service such as Groq or OpenRouter
 - `SALTY_DAILY_LIMIT` (optional, default 3000): Salty messages per day across the whole site, a cost guard
 
 Security headers (no framing, no sniffing, strict referrer, no camera/mic/location) are set in `vercel.json`.

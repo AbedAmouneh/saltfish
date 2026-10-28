@@ -1,0 +1,2 @@
+# Not needed to build or run the site (only scripts/images.mjs reads it, locally)
+research/
