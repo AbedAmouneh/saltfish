@@ -1,0 +1,72 @@
+{
+  "branches": [
+    {
+      "id": "naccache",
+      "name": "Saltfish Naccache",
+      "short": { "en": "Naccache", "ar": "النقاش", "fr": "Naccache" },
+      "venue": { "en": "Zero 4", "ar": "زيرو ٤", "fr": "Zero 4" },
+      "blurb": {
+        "en": "Our home at Zero 4: a tiled hand roll counter, a terrace tucked into the greenery, and DJs on weekend nights.",
+        "ar": "بيتنا في زيرو ٤: كاونتر هاند رول بالبلاط الأحمر، تيراس مخبّى بين الخضار، ودي جاي بليالي الويكند.",
+        "fr": "Notre maison à Zero 4 : un comptoir carrelé à hand rolls, une terrasse nichée dans la verdure et des DJ le week-end."
+      },
+      "address": {
+        "street": "Zero 4",
+        "locality": "Naccache",
+        "region": "Metn",
+        "country": "LB",
+        "display": {
+          "en": "Zero 4, Naccache, Metn, Lebanon",
+          "ar": "زيرو ٤، النقاش، المتن، لبنان",
+          "fr": "Zero 4, Naccache, Metn, Liban"
+        }
+      },
+      "geo": { "lat": 33.9188416, "lng": 35.5911142 },
+      "phones": ["+961 3 374 344", "+961 70 120 014"],
+      "whatsapp": "9613374344",
+      "hours": [
+        { "days": ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"], "opens": "12:00", "closes": "24:00" }
+      ],
+      "googlePlaceId": "ChIJwVnCCAA_HxUR_u6cW9KATC8",
+      "seating": ["counter", "indoor", "terrace"],
+      "tables": 20,
+      "photo": "naccache-dining-room",
+      "gallery": ["handrolls-tile-counter", "terrace-candles", "the-crew-counter", "kitchen-motion"],
+      "highlights": ["counter", "terrace", "dj", "screenings"]
+    },
+    {
+      "id": "faqra",
+      "name": "Saltfish Faqra",
+      "short": { "en": "Faqra", "ar": "فقرا", "fr": "Faqra" },
+      "venue": { "en": "Your mountain hangout", "ar": "سهرتك بالجبل", "fr": "Votre repaire en montagne" },
+      "blurb": {
+        "en": "The city's favourite hand rolls, up in the mountains. Long lunches, sunset DJ sets on Fridays and Saturdays, and the merch shop.",
+        "ar": "الهاند رولز يلي بتحبّها المدينة، بس بالجبل. غدا طويل، دي جاي مع الغروب الجمعة والسبت، ومحل الـ merch.",
+        "fr": "Les hand rolls préférés de la ville, en montagne. Longs déjeuners, DJ au coucher du soleil le vendredi et le samedi, et la boutique merch."
+      },
+      "address": {
+        "street": "Faqra",
+        "locality": "Kfardebian",
+        "region": "Keserwan",
+        "country": "LB",
+        "display": {
+          "en": "Faqra, Kfardebian, Lebanon",
+          "ar": "فقرا، كفرذبيان، لبنان",
+          "fr": "Faqra, Kfardebian, Liban"
+        }
+      },
+      "geo": { "lat": 33.9803674, "lng": 35.8095967 },
+      "phones": ["+961 3 372 767", "+961 81 244 277"],
+      "whatsapp": "9613372767",
+      "hours": [
+        { "days": ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"], "opens": "12:00", "closes": "24:00" }
+      ],
+      "googlePlaceId": "ChIJncHBHQBJHxUR6LOz7upNGa0",
+      "seating": ["counter", "indoor", "terrace"],
+      "tables": 20,
+      "photo": "faqra-terrace",
+      "gallery": ["faqra-cocktails", "oysters-faqra", "faqra-poster", "handroll-slate"],
+      "highlights": ["terrace", "dj", "merch"]
+    }
+  ]
+}

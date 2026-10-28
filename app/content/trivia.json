@@ -1,0 +1,64 @@
+{
+  "terms": [
+    { "term": "Zaatar", "origin": "lebanese" },
+    { "term": "Ikura", "origin": "japanese" },
+    { "term": "Tahini", "origin": "lebanese" },
+    { "term": "Nigiri", "origin": "japanese" },
+    { "term": "Burghul", "origin": "lebanese" },
+    { "term": "Umeshu", "origin": "japanese" },
+    { "term": "Kebbeh nayyeh", "origin": "lebanese" },
+    { "term": "Donburi", "origin": "japanese" },
+    { "term": "Debes (carob molasses)", "origin": "lebanese" },
+    { "term": "Edamame", "origin": "japanese" },
+    { "term": "Bizri", "origin": "lebanese" },
+    { "term": "Chutoro", "origin": "japanese" },
+    { "term": "Husrum (grape verjuice)", "origin": "lebanese" },
+    { "term": "Nori", "origin": "japanese" },
+    { "term": "Orange blossom water", "origin": "lebanese" },
+    { "term": "Sashimi", "origin": "japanese" },
+    { "term": "Almaza", "origin": "lebanese" },
+    { "term": "Sake", "origin": "japanese" }
+  ],
+  "facts": [
+    {
+      "statement": { "en": "Saltfish serves only 20 cheeseburgers a day.", "ar": "سولت فيش بيقدّم بس ٢٠ تشيز برغر باليوم.", "fr": "Saltfish ne sert que 20 cheeseburgers par jour." },
+      "answer": true
+    },
+    {
+      "statement": { "en": "Saltfish first opened in Mar Mikhael.", "ar": "سولت فيش فتح أوّل مرّة بمار مخايل.", "fr": "Saltfish a d'abord ouvert à Mar Mikhael." },
+      "answer": true
+    },
+    {
+      "statement": { "en": "The Tomatini is made with gin.", "ar": "التوماتيني معمول بالجن.", "fr": "Le Tomatini est préparé avec du gin." },
+      "answer": false
+    },
+    {
+      "statement": { "en": "A hand roll should be eaten straight away, while the nori is crisp.", "ar": "الهاند رول لازم ينّاكل فورًا، والنوري بعده مقرمش.", "fr": "Un hand roll se mange tout de suite, tant que le nori est croustillant." },
+      "answer": true
+    },
+    {
+      "statement": { "en": "The Caviar Fish Burger comes on a sesame bun.", "ar": "الكافيار فيش برغر بيجي بخبز بالسمسم.", "fr": "Le Caviar Fish Burger est servi dans un pain au sésame." },
+      "answer": false
+    },
+    {
+      "statement": { "en": "Saltfish's Naccache home is at Zero 4.", "ar": "بيت سولت فيش بالنقاش موجود بزيرو ٤.", "fr": "L'adresse de Saltfish à Naccache se trouve à Zero 4." },
+      "answer": true
+    },
+    {
+      "statement": { "en": "Debes Tahini is a Japanese dessert.", "ar": "الدبس بطحينة حلو ياباني.", "fr": "Le Debes Tahini est un dessert japonais." },
+      "answer": false
+    },
+    {
+      "statement": { "en": "Gillardeau oysters come from France.", "ar": "محار جيلاردو جايي من فرنسا.", "fr": "Les huîtres Gillardeau viennent de France." },
+      "answer": true
+    },
+    {
+      "statement": { "en": "Every complaint at Saltfish earns a sticker that the team wears.", "ar": "كل شكوى بسولت فيش إلها ستيكر بيلبسه الفريق.", "fr": "Chez Saltfish, chaque plainte vaut un sticker que l'équipe porte." },
+      "answer": true
+    },
+    {
+      "statement": { "en": "The Ribeye is Japanese Wagyu.", "ar": "الريب آي هو واغيو ياباني.", "fr": "Le Ribeye est du wagyu japonais." },
+      "answer": false
+    }
+  ]
+}

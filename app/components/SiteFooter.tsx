@@ -1,0 +1,87 @@
+import { Link } from "react-router";
+import { branches, site } from "~/content";
+import { pick, useI18n } from "~/i18n";
+import { telHref } from "~/lib/contact";
+import { LanguageSwitch } from "./LanguageSwitch";
+import { Arrow } from "./ui";
+import { Logo } from "./Logo";
+
+export function SiteFooter() {
+  const { t, locale, href } = useI18n();
+  const year = new Date().getFullYear();
+  return (
+    <footer className="relative mt-24 border-t border-line bg-coal">
+      <div className="tile-pattern h-3" aria-hidden="true" />
+      <div className="gutter container-x grid gap-12 py-16 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
+        <div className="grid content-start gap-5">
+          <Link to={href("/")} className="justify-self-start text-4xl text-cream" aria-label="Saltfish">
+            <Logo />
+          </Link>
+          <p className="max-w-xs text-sand">{t.common.footer.tagline}</p>
+          <LanguageSwitch className="justify-self-start" />
+        </div>
+
+        {branches.map((b) => (
+          <div key={b.id} className="grid content-start gap-3 text-sm">
+            <h2 className="eyebrow">{pick(b.short, locale)}</h2>
+            <p className="text-sand">{pick(b.address.display, locale)}</p>
+            <p className="text-sand">
+              {t.common.openDaily}, {t.common.hoursShort}
+            </p>
+            <ul className="grid">
+              {b.phones.map((p) => (
+                <li key={p}>
+                  <a href={telHref(p)} className="inline-block py-1.5 font-semibold text-cream tabular-nums hover:text-amber" dir="ltr">
+                    {p}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <Link to={href(`/${b.id}`)} className="inline-flex items-center gap-1 justify-self-start py-1.5 font-semibold text-amber hover:underline">
+              {t.branch.eyebrow} <Arrow />
+            </Link>
+          </div>
+        ))}
+
+        <div className="grid content-start gap-3 text-sm">
+          <h2 className="eyebrow">{t.common.footer.explore}</h2>
+          <ul className="grid">
+            {[
+              ["/menu", t.common.nav.menu],
+              ["/menu/drinks", t.menu.drinksTitle],
+              ["/events", t.common.nav.events],
+              ["/story", t.common.nav.story],
+              ["/play", t.common.nav.play],
+              ["/book", t.common.nav.book],
+            ].map(([to, label]) => (
+              <li key={to}>
+                <Link to={href(to!)} className="inline-block py-1.5 text-sand hover:text-cream">
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <h2 className="eyebrow mt-4">{t.common.footer.follow}</h2>
+          <ul className="flex gap-3">
+            <li>
+              <a href={site.instagram} target="_blank" rel="noopener" className="inline-block py-2 font-semibold text-cream hover:text-amber">
+                {t.common.instagram}
+              </a>
+            </li>
+            <li>
+              <a href={site.spotifyPlaylist} target="_blank" rel="noopener" className="inline-block py-2 font-semibold text-cream hover:text-amber">
+                Spotify
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="gutter container-x flex flex-wrap justify-between gap-3 border-t border-line py-6 text-xs text-dusk">
+        <p>
+          © {year} {site.name}. {t.common.footer.rights}
+        </p>
+        <p>{t.common.footer.photos}</p>
+      </div>
+    </footer>
+  );
+}

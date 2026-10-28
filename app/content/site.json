@@ -1,0 +1,16 @@
+{
+  "name": "Saltfish",
+  "legalName": "Salt Fish",
+  "tagline": {
+    "en": "Mediterrasian restaurant & hand roll counter",
+    "ar": "مطعم متوسطي-آسيوي وكاونتر هاند رول",
+    "fr": "Restaurant méditerrasiatique & comptoir à hand rolls"
+  },
+  "url": "https://saltfish.com.lb",
+  "instagram": "https://www.instagram.com/saltfish.lb/",
+  "spotifyPlaylist": "https://open.spotify.com/playlist/4x0EUZk8Qo0P6Ky4WanCDK",
+  "spotifyEmbed": "https://open.spotify.com/embed/playlist/4x0EUZk8Qo0P6Ky4WanCDK",
+  "priceRange": "$$$",
+  "servesCuisine": ["Seafood", "Mediterranean", "Japanese", "Lebanese", "Sushi"],
+  "founded": "2023"
+}

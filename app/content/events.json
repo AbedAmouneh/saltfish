@@ -1,0 +1,89 @@
+{
+  "rituals": [
+    {
+      "id": "the-saturday-thing",
+      "title": "The Saturday Thing",
+      "branch": "naccache",
+      "days": ["Sa"],
+      "start": "13:00",
+      "end": null,
+      "photo": "packed-room",
+      "summary": {
+        "en": "Lunch that turns into something else. Good food, cocktails, vinyl and a DJ, from lunchtime into the night.",
+        "ar": "غدا بيتحوّل لشي تاني. أكل طيّب، كوكتيلات، فينيل ودي جاي، من الضهر لآخر الليل.",
+        "fr": "Un déjeuner qui se transforme. Bonne cuisine, cocktails, vinyles et DJ, du midi jusqu'au soir."
+      },
+      "note": {
+        "en": "Want a quieter lunch? Ask for a terrace table when you book.",
+        "ar": "بدّك غدا أهدى؟ اطلب طاولة عالتيراس وقت الحجز.",
+        "fr": "Envie d'un déjeuner plus calme ? Demandez une table en terrasse en réservant."
+      }
+    },
+    {
+      "id": "adult-happy-meal",
+      "title": "The Adult Happy Meal",
+      "branch": "naccache",
+      "days": ["Mo", "Tu", "We", "Th", "Fr"],
+      "start": "12:00",
+      "end": "18:00",
+      "price": 29,
+      "photo": "caviar-burger",
+      "summary": {
+        "en": "Caviar Fish Burger, fries, a cocktail or drink of your choice, and a surprise toy. Because grown-ups deserve toys too.",
+        "ar": "كافيار فيش برغر، بطاطا، كوكتيل أو مشروب ع ذوقك، وهدية مفاجأة. لأنو الكبار كمان بيستاهلوا ألعاب.",
+        "fr": "Caviar Fish Burger, frites, un cocktail ou une boisson au choix, et un jouet surprise. Parce que les grands aussi méritent des jouets."
+      },
+      "note": null
+    },
+    {
+      "id": "dj-nights",
+      "title": "DJ Nights",
+      "branch": "both",
+      "days": ["Fr", "Sa"],
+      "start": "sunset",
+      "end": null,
+      "photo": "terrace-candles",
+      "summary": {
+        "en": "Groovy sets on Friday and Saturday nights. In Faqra the music starts as the sun goes down.",
+        "ar": "سيتات غروفي ليالي الجمعة والسبت. بفقرا الموسيقى بتبلّش مع الغروب.",
+        "fr": "Des sets groovy le vendredi et le samedi soir. À Faqra, la musique commence au coucher du soleil."
+      },
+      "note": null
+    },
+    {
+      "id": "live-games",
+      "title": "Every Game. Live.",
+      "branch": "naccache",
+      "days": [],
+      "start": null,
+      "end": null,
+      "photo": "oysters-red-tile",
+      "summary": {
+        "en": "Big matches on screen at Zero 4. If you're going to stare at a screen for 90 minutes, do it with oysters and a drink in hand.",
+        "ar": "الماتشات الكبيرة عالشاشة بزيرو ٤. إذا بدّك تتطلّع بشاشة ٩٠ دقيقة، خلّيها مع محار وكاس بإيدك.",
+        "fr": "Les grands matchs sur écran à Zero 4. Quitte à fixer un écran pendant 90 minutes, autant le faire avec des huîtres et un verre à la main."
+      },
+      "note": {
+        "en": "Ask us which matches we're showing this week.",
+        "ar": "اسألنا شو الماتشات يلي منعرضها هالجمعة.",
+        "fr": "Demandez-nous quels matchs passent cette semaine."
+      }
+    }
+  ],
+  "oneOff": [
+    {
+      "id": "halloween-2026",
+      "title": "Here for the Boo-ze",
+      "branch": "naccache",
+      "date": "2026-10-31",
+      "start": null,
+      "photo": "neon-sign",
+      "summary": {
+        "en": "Halloween at Saltfish. Costumes encouraged, cocktails mandatory.",
+        "ar": "هالوين بسولت فيش. التنكّر مستحبّ، والكوكتيلات إلزامية.",
+        "fr": "Halloween chez Saltfish. Déguisements bienvenus, cocktails obligatoires."
+      },
+      "confirmed": false
+    }
+  ]
+}

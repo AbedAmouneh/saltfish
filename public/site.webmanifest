@@ -1,0 +1,14 @@
+{
+  "name": "Saltfish",
+  "short_name": "Saltfish",
+  "description": "Mediterrasian restaurant & hand roll counter in Naccache and Faqra.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#120b08",
+  "theme_color": "#120b08",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

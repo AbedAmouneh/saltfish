@@ -1,0 +1,627 @@
+{
+  "naccache-dining-room": {
+    "alt": {
+      "en": "The Naccache dining room glowing red, candles burning in wine bottles",
+      "ar": "صالة النقاش بإضاءة حمراء وشموع بقناني النبيذ",
+      "fr": "La salle de Naccache baignée de rouge, bougies dans des bouteilles de vin"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAECAwX/xAAdEAACAgMBAQEAAAAAAAAAAAABAwACBBExQSEi/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQT/xAAYEQEBAAMAAAAAAAAAAAAAAAAAAQIhMf/aAAwDAQACEQMRAD8A4IC13/HnDNxnZJoQL6A5IUihqSe+SGLuPDqTL5jskssD2N2QzR+whGC8f//Z"
+  },
+  "handrolls-tile-counter": {
+    "alt": {
+      "en": "Hand rolls lined up on the red tiled counter",
+      "ar": "هاند رولز مصفوفة على الكاونتر بالبلاط الأحمر",
+      "fr": "Hand rolls alignés sur le comptoir carrelé rouge"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAABA//EAB4QAAICAgIDAAAAAAAAAAAAAAECAAMRIRIxBRMi/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQMEBf/EABgRAAMBAQAAAAAAAAAAAAAAAAABEQIx/9oADAMBAAIRAxEAPwAnsW2zKaE0LW7Hlg4hRcvD40061kOVVOz3JTRynYEGlEd44AsSexKUDGvh/9k="
+  },
+  "oysters-red-tile": {
+    "alt": {
+      "en": "Oysters on ice with lemon on a red tile table",
+      "ar": "محار على التلج مع حامض على طاولة بلاط أحمر",
+      "fr": "Huîtres sur glace et citron sur une table carrelée rouge"
+    },
+    "width": 3277,
+    "height": 4096,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEA//EAB4QAQADAAICAwAAAAAAAAAAAAEAAgMRExQxISJh/8QAFgEBAQEAAAAAAAAAAAAAAAAABAED/8QAGBEBAQEBAQAAAAAAAAAAAAAAAREAAhL/2gAMAwEAAhEDEQA/AJfK7/deQi0zFbOaEbBz0Ez4CNa+lPr7/Jmta5PSXyGga9duaqTXPS1UsPzCEjmwu//Z"
+  },
+  "oysters-faqra": {
+    "alt": {
+      "en": "A platter of freshly shucked oysters in Faqra",
+      "ar": "صحن محار طازج بفقرا",
+      "fr": "Un plateau d'huîtres fraîchement ouvertes à Faqra"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQL/xAAfEAABBQACAwEAAAAAAAAAAAACAAEDBBEFMRIiQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABgRAAMBAQAAAAAAAAAAAAAAAAABAjER/9oADAMBAAIRAxEAPwCe3ULybGzFtmaYKmML9fE69aEicTfxdukzjpBMxjfJBfv8U9SqEfWc268cpe46ruPrRQx+g4hCN6KsP//Z"
+  },
+  "zaatar-tiradito": {
+    "alt": {
+      "en": "Zaatar white fish tiradito in a pool of herb oil",
+      "ar": "تيراديتو سمك أبيض بالزعتر بزيت الأعشاب",
+      "fr": "Tiradito de poisson blanc au zaatar dans une huile aux herbes"
+    },
+    "width": 1440,
+    "height": 1798,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EAB8QAAIBBAIDAAAAAAAAAAAAAAEDAAIEESEFEhQiMf/EABUBAQEAAAAAAAAAAAAAAAAAAAEE/8QAGREAAgMBAAAAAAAAAAAAAAAAAAEDITEC/9oADAMBAAIRAxEAPwCJ3DOBNQaCJK2zuUbHsJuMBNIydRDRnAHySLtlWYRVXbfI69tZj2tqxCEZKQxW7P/Z"
+  },
+  "crudo-passion-fruit-martini": {
+    "alt": {
+      "en": "Crudo passion fruit martini in a bowl",
+      "ar": "كرودو باشن فروت مارتيني",
+      "fr": "Crudo passion façon martini dans un bol"
+    },
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAG/8QAHhAAAgMBAAIDAAAAAAAAAAAAAQIAAxEEBRMhMUH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGhEBAAEFAAAAAAAAAAAAAAAAAAIBAxFRUv/aAAwDAQACEQMRAD8AJ1eM6a3a+pdB+cgVdirezVeaBfKioGtxp/CYdOVO+7cAB+4Ok+ipW9FJzVWoC6gmJprSlcrGSlC5Jf/Z"
+  },
+  "poke-bowl": {
+    "alt": {
+      "en": "Poke bowl next to a cocktail and a panda chopstick holder",
+      "ar": "بوكي بول حدّ كوكتيل وحامل عيدان على شكل باندا",
+      "fr": "Poke bowl à côté d'un cocktail et d'un repose-baguettes panda"
+    },
+    "width": 3248,
+    "height": 4048,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAE/8QAHRAAAgICAwEAAAAAAAAAAAAAAQIAAwQRISIxQf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAxAv/aAAwDAQACEQMRAD8ADGayrNLAdTNudbUFDg9xCx1YpttKfeZPSLn1sFfsiVdrDkIMknzZ1HxlCV8b5lKC5O7f/9k="
+  },
+  "handroll-slate": {
+    "alt": {
+      "en": "A hand roll on a black slate with soy sauce",
+      "ar": "هاند رول على صحن حجر أسود مع صويا",
+      "fr": "Un hand roll sur ardoise noire avec sauce soja"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQF/8QAIBAAAgICAgIDAAAAAAAAAAAAAQMAAgQRBTEiQVFScf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGhEAAwADAQAAAAAAAAAAAAAAAAERAgMxIf/aAAwDAQACEQMRAD8A4ysBZQfv8Ri+PbaoC7fso2rQ073o9am/iaMq4dmp73AfqorSsg3HAsKggGRmtsrJrRfjXXqEIGPGUbeo/9k="
+  },
+  "torched-salmon-nigiri": {
+    "alt": {
+      "en": "Salmon belly nigiri being torched",
+      "ar": "نيغيري بطن سلمون عم ينشوى بالشعلة",
+      "fr": "Nigiri de ventre de saumon passé au chalumeau"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EAB4QAAICAQUBAAAAAAAAAAAAAAECAAMEERMhIjEF/8QAFgEBAQEAAAAAAAAAAAAAAAAABAAB/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECMRESIf/aAAwDAQACEQMRAD8AxLsJnqVj4JKSlDAay7FyWts7cqfBE/VxClgcDgw1ywxnYx2Qiqxkt6nyW7rXEbh10hCayVH/2Q=="
+  },
+  "salmon-sashimi": {
+    "alt": {
+      "en": "A slice of salmon sashimi dipped in soy with chopsticks",
+      "ar": "قطعة ساشيمي سلمون بالعيدان مع صويا",
+      "fr": "Une tranche de sashimi de saumon trempée dans la sauce soja"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAQP/xAAfEAABBAEFAQAAAAAAAAAAAAABAAIDBBESEyEiQSP/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAxQf/aAAwDAQACEQMRAD8Ay3XbLKdx4Lip3VHRn58hLPDNHV3Cew9S1rM+nqNR9WdGuJX2Xl1Eg4xldaETGwghoyUITdgZf//Z"
+  },
+  "lobster-roll": {
+    "alt": {
+      "en": "Lobster roll on a metal tray with fries",
+      "ar": "لوبستر رول على صينية مع بطاطا",
+      "fr": "Lobster roll sur un plateau en métal avec frites"
+    },
+    "width": 3277,
+    "height": 4096,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwT/xAAjEAACAgAEBwEAAAAAAAAAAAABAgADBBESYQUhIiMkQVFx/8QAFQEBAQAAAAAAAAAAAAAAAAAABAL/xAAZEQEAAwEBAAAAAAAAAAAAAAABAAIREjH/2gAMAwEAAhEDEQA/AEXCkAt71RImrHYRHPj19PuMyBXUH0ghvgldV+liDVmN4fVciioV2Mqq1VVQDMbyV1FbpzXL8hCFF6l28n//2Q=="
+  },
+  "caviar-burger": {
+    "alt": {
+      "en": "Caviar being spooned onto the caviar fish burger",
+      "ar": "كافيار عم ينحط على الكافيار فيش برغر",
+      "fr": "Du caviar déposé à la cuillère sur le Caviar Fish Burger"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUA/8QAIBABAAICAgEFAAAAAAAAAAAAAQACAwQREhQhMUFhcf/EABYBAQEBAAAAAAAAAAAAAAAAAAMEBf/EABoRAAICAwAAAAAAAAAAAAAAAAABAgMhMUH/2gAMAwEAAhEDEQA/AA7vXBdKLVfkhbLk1+1zn192Vt3XbvNQYHxatGuR6/RI65pxNF1NvBU2FMXJJlbrlRef2aaFV0eO0f/Z"
+  },
+  "cheeseburger-spread": {
+    "alt": {
+      "en": "Cheeseburger and cocktails on an orange table",
+      "ar": "تشيز برغر وكوكتيلات على طاولة برتقالية",
+      "fr": "Cheeseburger et cocktails sur une table orange"
+    },
+    "width": 3277,
+    "height": 4096,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDBAX/xAAfEAACAQQDAQEAAAAAAAAAAAABAwACBBESITFBEyL/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgT/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIRMSH/2gAMAwEAAhEDEQA/AHZqslCrajbHsm67WCQpeKPIk1optis9n2RCthqD+IG8ZrpRdowBlXxznmdBhIslEcE9whLeBx1H/9k="
+  },
+  "burger-fries": {
+    "alt": {
+      "en": "Burger and fries on striped paper",
+      "ar": "برغر وبطاطا على ورق مخطّط",
+      "fr": "Burger et frites sur papier rayé"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCBf/EAB0QAAIDAAMBAQAAAAAAAAAAAAECAAMRBBJRIjH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGREAAwEBAQAAAAAAAAAAAAAAAAERAhIh/9oADAMBAAIRAxEAPwCLk3iy1jI+7jRhnXTgKK8369mSi0YHUE+wumtPkSkpYKbG/OxlYrWwa42Ihb6Ih//Z"
+  },
+  "wagyu-grill": {
+    "alt": {
+      "en": "Wagyu steak over open flames on the grill",
+      "ar": "ستيك واغيو عالنار",
+      "fr": "Steak de wagyu sur les flammes du grill"
+    },
+    "width": 1440,
+    "height": 1805,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAD/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIAAwQRITESIkH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAwX/xAAZEQACAwEAAAAAAAAAAAAAAAAAAgEDITH/2gAMAwEAAhEDEQA/AC5+WVQFtAn7CWZNGgSw2ZvatWbVqw68Ya3Fw1qX26PMJk9NOu96ozQVtrqnB1CWWu3ZlKVQG/D/2Q=="
+  },
+  "cala-milanese": {
+    "alt": {
+      "en": "Giant calamari Milanese on a plate",
+      "ar": "كاليماري عملاق عالطريقة الميلانية",
+      "fr": "Calamar géant à la milanaise"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBv/EACAQAAEFAAEFAQAAAAAAAAAAAAEAAgMEERIFEyIjQVH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAAH/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAC/9oADAMBAAIRAxEAPwDOPcA4cRmp8c9iA+skKjS6YRX5OjBd81Ktd2IecYAH4inXKzMiFupXp3wtYIzilWbEkmh7tCELALrp3//Z"
+  },
+  "donburi": {
+    "alt": {
+      "en": "Miso-glazed salmon donburi with greens",
+      "ar": "دونبوري سلمون بالميسو مع خضار",
+      "fr": "Donburi de saumon laqué au miso et légumes verts"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EACAQAAICAQMFAAAAAAAAAAAAAAECAAMRBAUSUWFxgaH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABgRAQEBAQEAAAAAAAAAAAAAAAEAETEC/9oADAMBAAIRAxEAPwBJdK6itrqx7TK9tTjAPox+q24VklsjoZHsPG7h9gGbyoT0GjULdw1DrhmyPEnE87MtCEeJ5f/Z"
+  },
+  "moules": {
+    "alt": {
+      "en": "A bowl of moules marinières",
+      "ar": "صحن بلح البحر مارينيير",
+      "fr": "Un bol de moules marinières"
+    },
+    "width": 3248,
+    "height": 4048,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAQT/xAAgEAABBAIBBQAAAAAAAAAAAAABAAIDEQQSBRMxMmFx/8QAFgEBAQEAAAAAAAAAAAAAAAAABAID/8QAGREAAgMBAAAAAAAAAAAAAAAAABECAyJC/9oADAMBAAIRAxEAPwCZPjvxXN3IFGwU2J0mVPuKNDsmc1FIJAXeJCzhcGUS9SiGo/LFPSLujZKD2h31dcTGiOg0AekIWMC7D//Z"
+  },
+  "mussels": {
+    "alt": {
+      "en": "Mussels in a pot",
+      "ar": "بلح البحر بطنجرة",
+      "fr": "Des moules en cocotte"
+    },
+    "width": 1440,
+    "height": 1438,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAQABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABgT/xAAfEAABBAEFAQAAAAAAAAAAAAACAQMEEQAFBhIhMUH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECEf/aAAwDAQACEQMRAD8Am1TWTlKINlxpfmJtvzilw0F3sw6XAbQiBKp3fiYz2rEcZjk45ac/LwysFT0//9k="
+  },
+  "lemon-tart": {
+    "alt": {
+      "en": "Lemon tart topped with torched meringue",
+      "ar": "تارت الحامض مع مارينغ محروق",
+      "fr": "Tarte au citron meringuée"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EACMQAAEEAAQHAAAAAAAAAAAAAAIAAQMRBBIxYQUTITJBcYH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgT/xAAYEQEBAAMAAAAAAAAAAAAAAAABAAITUf/aAAwDAQACEQMRAD8AxQwySdGBy3TxwMr9o/FV4VPhywmQXET82mgJAeos162gceWnY0CQGYcw2z7JEhyPTcw69oQpmQv/2Q=="
+  },
+  "tomatini": {
+    "alt": {
+      "en": "The Tomatini cocktail with a cherry tomato, by candlelight",
+      "ar": "كوكتيل التوماتيني مع بندورة كرزية عضو الشمعة",
+      "fr": "Le cocktail Tomatini et sa tomate cerise, à la bougie"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMEBQb/xAAhEAABBAEDBQAAAAAAAAAAAAABAAIDEQQFMUESEyEicf/EABYBAQEBAAAAAAAAAAAAAAAAAAMCBP/EABwRAAIABwAAAAAAAAAAAAAAAAABAhESEzEyQf/aAAwDAQACEQMRAD8Az0vWKJZQPlJOQ47K6ze06Ror1ApIg09s84ZEAByUNa6abUTU0wyXGh9UzBJjewN53QhQ8irQ/9k="
+  },
+  "dirty-martini": {
+    "alt": {
+      "en": "Martini with a long skewer of olives",
+      "ar": "مارتيني مع سيخ زيتون طويل",
+      "fr": "Martini avec une longue brochette d'olives"
+    },
+    "width": 720,
+    "height": 1280,
+    "widths": [
+      480,
+      720
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAcABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EAB8QAAIDAQABBQAAAAAAAAAAAAECAAMRBAUhIkFCUf/EABYBAQEBAAAAAAAAAAAAAAAAAAMCBf/EABkRAAIDAQAAAAAAAAAAAAAAAAACARESIf/aAAwDAQACEQMRAD8AyC0M32EJ0FajcJlVHi77fduKPmF0cSc6gkM5MPal4ael3FeeZGRTob9j9Fgw5J+dFZzo30jOdAbDuwZjlmkuVaqP/9k="
+  },
+  "sake-shelf": {
+    "alt": {
+      "en": "Sake bottles on the red tiled shelf",
+      "ar": "قناني ساكي عالرف بالبلاط الأحمر",
+      "fr": "Bouteilles de saké sur l'étagère carrelée rouge"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAb/xAAfEAACAgEEAwAAAAAAAAAAAAABAgADEQQhMUEFEhP/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgT/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIDERL/2gAMAwEAAhEDEQA/AM/V49rQS2w6hfofmNhxLQsf0yOBE2apskNC6NKrTeaTLHdesxN6gKYQksSJ/9k="
+  },
+  "sake-handroll": {
+    "alt": {
+      "en": "Sake carafe and a hand roll on the counter",
+      "ar": "إبريق ساكي وهاند رول عالكاونتر",
+      "fr": "Carafe de saké et hand roll sur le comptoir"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EACEQAAICAgAHAQAAAAAAAAAAAAECAAMEEQUSEyEiMUJR/8QAFgEBAQEAAAAAAAAAAAAAAAAABAID/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEDERIhMf/aAAwDAQACEQMRAD8AgxQLiy2DWvRj24WjqDvcsyFqWlnrTbj5jsQGyhWKlT+Q2LHObdDekh7kTTeFZ5YQlGD6f//Z"
+  },
+  "terrace-candles": {
+    "alt": {
+      "en": "Candlelit terrace at night",
+      "ar": "التيراس بالليل عضو الشموع",
+      "fr": "La terrasse à la bougie, le soir"
+    },
+    "width": 720,
+    "height": 1280,
+    "widths": [
+      480,
+      720
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAcABADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwUBBP/EACAQAAICAQQDAQAAAAAAAAAAAAECAAMhBBESQTEyUWH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAAH/xAAYEQEBAQEBAAAAAAAAAAAAAAABAgARMf/aAAwDAQACEQMRAD8AjmhXxtmG+gYeonRTuFawnPQmWastsvf5B9TzNSU7kapjTxQeILadVCvyG3cWkkM+TJGtvsNjLyx8lI0822kz3f/Z"
+  },
+  "the-crew-counter": {
+    "alt": {
+      "en": "The Saltfish team behind the counter",
+      "ar": "فريق سولت فيش ورا الكاونتر",
+      "fr": "L'équipe Saltfish derrière le comptoir"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwT/xAAgEAACAgIBBQEAAAAAAAAAAAABAgADBBESFCEiMUGR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABkRAQADAQEAAAAAAAAAAAAAAAEAAjEhMv/aAAwDAQACEQMRAD8AzLZaQTz/AGUPm5NJ2p1FdXyLOVfiBG6HIsUhj2+SChs1lbJwkVuyUsy+wY1Wde1Z20IQX2PXyT//2Q=="
+  },
+  "the-crew": {
+    "alt": {
+      "en": "The Faqra kitchen crew in aprons",
+      "ar": "فريق مطبخ فقرا بالمراييل",
+      "fr": "L'équipe cuisine de Faqra en tablier"
+    },
+    "width": 3277,
+    "height": 4096,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwAEBf/EACEQAAEDBAEFAAAAAAAAAAAAAAEAAgMEBRESIiEkMlGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQADAQEBAAAAAAAAAAAAAAAAAQISE1H/2gAMAwEAAhEDEQA/AAiujMDYJ5LrDG0Ehc3tWBh8kVYYXMOg6+kXOBd2jWyihOOJTmgg1HE/VKQafpVSWT//2Q=="
+  },
+  "kitchen-motion": {
+    "alt": {
+      "en": "The kitchen in motion during service",
+      "ar": "المطبخ بنص السرفيس",
+      "fr": "La cuisine en plein service"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EAB8QAAEEAgIDAAAAAAAAAAAAAAEAAgMRBBIFQRMhYf/EABYBAQEBAAAAAAAAAAAAAAAAAAIDBP/EABoRAAICAwAAAAAAAAAAAAAAAAABERIxQVH/2gAMAwEAAhEDEQA/AMGPjZC3bopb8N0fYtOhmlMZaXGgFL5nna7+KKnpqdVo1WQsF0FO/Hjs+kIQQ3g//9k="
+  },
+  "faqra-terrace": {
+    "alt": {
+      "en": "Guests on the leafy Faqra terrace under the Saltfish sign",
+      "ar": "زوار على تيراس فقرا الأخضر تحت يافطة سولت فيش",
+      "fr": "Des convives sur la terrasse verdoyante de Faqra, sous l'enseigne Saltfish"
+    },
+    "width": 1440,
+    "height": 1440,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAQABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIE/8QAHhAAAwACAQUAAAAAAAAAAAAAAQIDABEEEhQiQVH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwApZPQKtqELmzseK6dK10Ppw6tXXQdfIesla1YAIp3k4b//2Q=="
+  },
+  "faqra-cocktails": {
+    "alt": {
+      "en": "Two red cocktails clinking outdoors in Faqra",
+      "ar": "كاستين كوكتيل أحمر بفقرا",
+      "fr": "Deux cocktails rouges trinquent en plein air à Faqra"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEA//EACAQAAIBAwQDAAAAAAAAAAAAAAECAAMREhMUIUEEIjH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwT/xAAaEQADAAMBAAAAAAAAAAAAAAAAAQIREyFB/9oADAMBAAIRAxEAPwBN02IcDi/yUb5EAdgcR3aQ0qVZ6iLh6dy6qVCaAQWEk3Ppo021lNDeOoUWE20ULZEcwhDQo4f/2Q=="
+  },
+  "faqra-poster": {
+    "alt": {
+      "en": "Saltfish Faqra poster: the yellow fish mascot with a martini and a hand roll",
+      "ar": "بوستر سولت فيش فقرا: السمكة الصفرا مع مارتيني وهاند رول",
+      "fr": "Affiche Saltfish Faqra : le poisson jaune avec un martini et un hand roll"
+    },
+    "width": 3277,
+    "height": 4096,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAQP/xAAeEAACAgIDAQEAAAAAAAAAAAABAgADBAUREjFBIf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECISJh/9oADAMBAAIRAxEAPwCti4iZdIsYdgJy2mvWvGL1pxG9ZSVweiP4f2ZtFevXuWbkfJFrwrL0nUX2VYvKMQW9iOyzshiKzYSp+QhDT6HKw//Z"
+  },
+  "packed-room": {
+    "alt": {
+      "en": "A packed room on a party night",
+      "ar": "الصالة مليانة بليلة سهرة",
+      "fr": "Une salle comble un soir de fête"
+    },
+    "width": 1440,
+    "height": 1440,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAQABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIE/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIAAwQhERMiIzFB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQEBAAMAAAAAAAAAAAAAAAABAAIDEf/aAAwDAQACEQMRAD8Ax4XTON5CQIeYKK07TqVRmI9JqdQFA9iBYamr1yw+QmD2q7gL/9k="
+  },
+  "table-spread": {
+    "alt": {
+      "en": "A spread of dishes and the Saltfish menu sheet on an orange table",
+      "ar": "أطباق منوّعة وورقة المنيو على طاولة برتقالية",
+      "fr": "Un assortiment de plats et la carte Saltfish sur une table orange"
+    },
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EACEQAAICAQIHAAAAAAAAAAAAAAECAAMEESEFEhMxQlFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAAAAgEhMRH/2gAMAwEAAhEDEQA/AKGQY9o0AX5MWuTWXjGZO9u4EnsRnY2LryepMy1ZWjR0Xe5Ne58pflHpcOBQAEiEI0aC2H//2Q=="
+  },
+  "burger-beer": {
+    "alt": {
+      "en": "Burger and a cold beer being served",
+      "ar": "برغر وبيرة باردة",
+      "fr": "Burger et bière fraîche servis à table"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAb/xAAgEAACAwAABwEAAAAAAAAAAAABAgADEQQFEhMiMkFh/8QAFQEBAQAAAAAAAAAAAAAAAAAABAP/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIDETL/2gAMAwEAAhEDEQA/AM+Ke6o32HyRPDFT5qcEYt+4cw/ka63314gJh5N6Lglg7ltauhLKCRL6N0uAAAIQh7OmWr5R/9k="
+  },
+  "neon-sign": {
+    "alt": {
+      "en": "The red neon Saltfish sign",
+      "ar": "يافطة سولت فيش النيون الحمرا",
+      "fr": "L'enseigne néon rouge Saltfish"
+    },
+    "width": 1440,
+    "height": 1440,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAQABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQG/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIAAwQREiEiMkH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAECABESIf/aAAwDAQACEQMRAD8Az+Ohs7I8RDzkWvXD7EOQFqNaHQMmcB/Z4IB1ctZ1xmuz/9k="
+  },
+  "shrimp-skillet": {
+    "alt": {
+      "en": "Shrimp in a black skillet with lemon",
+      "ar": "قريدس بمقلاية سودا مع حامض",
+      "fr": "Crevettes dans une poêle noire avec du citron"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAACBf/EACAQAAICAgICAwAAAAAAAAAAAAIDAAEEERMhBSISJFH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAQEBAQAAAAAAAAAAAAAAAAEAAiH/2gAMAwEAAhEDEQA/AOgQpUirbfxu4ZOSsytYFuoPyOV9pdM7GHMhvNVwX7b7qpDQPK+VOs/hB+6YO5pOInHEmLD2/blKCbf/2Q=="
+  },
+  "pasta-ikura": {
+    "alt": {
+      "en": "Pasta topped with ikura on a striped plate",
+      "ar": "باستا مع إيكورا على صحن مخطّط",
+      "fr": "Pâtes garnies d'ikura sur une assiette rayée"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EACEQAAIBAwQDAQAAAAAAAAAAAAECAAMEBRETMlEVISJB/8QAFgEBAQEAAAAAAAAAAAAAAAAABAED/8QAGhEAAwADAQAAAAAAAAAAAAAAAAERAiExYf/aAAwDAQACEQMRAD8Ab4unpx9SS7xSBfnVT1NTKCuKybQJU9RlygSzXc5w021BKxTnpHZX9cqASCAP0SbJ3FSojFmhCaPhUpT/2Q=="
+  },
+  "raw-bar-plates": {
+    "alt": {
+      "en": "Raw bar plates being served",
+      "ar": "أطباق البار النيء",
+      "fr": "Assiettes du bar cru servies à table"
+    },
+    "width": 3277,
+    "height": 4096,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQX/xAAeEAACAgMBAAMAAAAAAAAAAAABAgADBBEhEgUTMf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGxEAAgEFAAAAAAAAAAAAAAAAAAERAgMSMTL/2gAMAwEAAhEDEQA/AOF8eprf7eaM13avIJ5pj+RuJUoxx63uS5db12h1BMHKXAyUF2OfSdjyAR0CEJFd6KadH//Z"
+  },
+  "handroll-logo": {
+    "alt": {
+      "en": "The wagyu hand roll with the Saltfish logo",
+      "ar": "هاند رول الواغيو مع لوغو سولت فيش",
+      "fr": "Le hand roll wagyu et le logo Saltfish"
+    },
+    "width": 720,
+    "height": 1280,
+    "widths": [
+      480,
+      720
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAcABADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAgMABAUG/8QAIBAAAgIBBAMBAAAAAAAAAAAAAQIAAwQFEiFRESIxUv/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECAxJB/9oADAMBAAIRAxEAPwBy6bcBz4gnTHJ8F1B6l7Wc44qhcdQxI+znsXNyLdQV23OQfggpi5DprvU+9oYD9R1VlmNZvpFYbuZqO3PJk3HswtMvdUXw/9k="
+  },
+  "shrimp-caesar-poster": {
+    "alt": {
+      "en": "Illustrated poster for the Shrimp Caesar Sourdough",
+      "ar": "بوستر مرسوم لساندويش شريمب سيزر ساوردو",
+      "fr": "Affiche illustrée du Shrimp Caesar Sourdough"
+    },
+    "width": 1405,
+    "height": 1874,
+    "widths": [
+      480,
+      960,
+      1405
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAVABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EAB8QAAEEAgIDAAAAAAAAAAAAAAEAAgMRBBITIRQiYf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAA//EABgRAAMBAQAAAAAAAAAAAAAAAAABEQIh/9oADAMBAAIRAxEAPwDUMwx5natJtOT5gF+tHqlGZnHK7ldZJ6VYZABrELch00bzJC78dk7iHhLj4bIZ9mk39QhQT//Z"
+  },
+  "craving-poster": {
+    "alt": {
+      "en": "Illustrated poster: The Craving, the caviar fish burger",
+      "ar": "بوستر مرسوم: The Craving، الكافيار فيش برغر",
+      "fr": "Affiche illustrée : The Craving, le Caviar Fish Burger"
+    },
+    "width": 1440,
+    "height": 1796,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EABsQAAIDAQEBAAAAAAAAAAAAAAECAAMRITES/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAEREv/aAAwDAQACEQMRAD8A3BaTa/TimKQxvVy/CeCOxDOwIAkzZliqF0b7Dq82rtUpfT7AUp9A5CELTX//2Q=="
+  },
+  "octo-skewer": {
+    "alt": {
+      "en": "Octopus skewer with peppers and olives",
+      "ar": "سيخ أخطبوط مع فليفلة وزيتون",
+      "fr": "Brochette de poulpe, poivrons et olives"
+    },
+    "width": 1440,
+    "height": 1800,
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUABADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIDBAUG/8QAHBAAAgIDAQEAAAAAAAAAAAAAAQIAAwQRMRJB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwIE/8QAGxEAAgEFAAAAAAAAAAAAAAAAAAECERIhIkH/2gAMAwEAAhEDEQA/AOeUZbHhjVZmRiX+UJBPyShMsONE7jadclbbFDeewKmzK6aToLLm9fOalKxQLPvYQhRexU0rUf/Z"
+  }
+}

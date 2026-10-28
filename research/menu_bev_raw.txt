@@ -1,0 +1,27 @@
+SOURCE: qrbring Beverages Menu (2026-10-28). USD. Format: name price (glass price)
+HOUSE SPECIALS: Tomatini (vodka, tomato, lemon, black pepper) 14 | Picante (tequila, agave, chili, coriander, lime) 14 | Beet-It (mezcal, tequila blanco, beetroot cordial) 14 | Sake Spritz (sake, white vermouth, elderflower, cucumber bitters, prosecco) 15 | Mezcal Mule (mezcal, tequila, mango, maple, lemon, soda) 15 | Japanese Negroni (Japanese gin infused oolong tea, umeshu red wine, italicus, campari) 15 | Sake Martini (sake, elderflower, vodka, cucumber bitters, vermouth) 14 | Berry Smash (gin infused berries, cocchi rosa, basil, sour mix) 13
+CLASSIC COCKTAILS: Aperol Spritz 14 | Dry Martini 12 | Dirty Martini 13 | Negroni 15 | Boulevardier 15 | Old Fashioned 15 | Americano 14 | Passion Fruit Martini 13 | Espresso Martini 13 | Margarita 14 | Tommy's Margarita 14 | Bloody Mary 13 | Moscow Mule 13 | London Mule 13 | Gin Basil Smash 13 | Gin Gimlet 13 | Paloma 14
+IMPORTED WHITE: Cotes du Rhone Parallele 45 Blanc Bio 58 (11) | Muchas Manos 58 (11) | Astoria Chardonnay 58 | Astoria Pinot Grigio 58 | Camioneta Verdejo 68 | Gavi di Gavi Marchesi di Barolo 89
+IMPORTED RED: Cotes du Rhone Parallele 45 Rouge Bio 58 (11) | Muchas Manos 58 (11) | Astoria Pinot Noir 58 | Camioneta Tempranillo 68 (12) | Matsu Carmen 98
+IMPORTED ROSE: AIX Rose Provence 68 (12) | By Ott Rose Provence 78
+LOCAL WHITE: Ksara Chardonnay 44 (8) | Ixsir Altitude 42 | Ixsir Grande Reserve 46 | B-QA White 49 (9) | Sept Obeideh 49 | Chateau Marsyas 76 | Bargylus Grand Vin de Syrie 78
+LOCAL RED: Sept Cuvee du Soleil 44 (8) | B-QA 49 (10) | Ixsir Altitude 45 | Ixsir Grande Reserve 52 | Chateau Marsyas 76 | Bargylus 78
+LOCAL ROSE: B-QA Rose 48 (9) | Ksara Sunset 35 | Ixsir Grande Reserve 46
+ORGANIC LEBANESE: Mersel Nour White 48 (10) | Mawj Nourvedre Red 48 (8)
+CHAMPAGNE: Moet Brut 190 | Moet Rose 280 | Moet Ice Imperial 240 | Moet Ice Rose 290
+PROSECCO: Astoria Tiemo DOC 62 (9) | Astoria Fashion Victim Rose 62 (9)
+SAKE: Sho Chiku Bai Nigori Junmai (by the carafe) 12 | Kicho Tokusen 300ml 35 | Sayuri 700ml 65 | Tentaka Junmai 68 | Nigori Unfiltered 68 | Hideyoshi Junmai Daiginjo 135
+HOUSE ICE TEA: Lemongrass ginger green tea honey 5.5 | Mixed Berries 5.5
+BEER: Almaza 5 | Almaza Light 5 | Heineken 8 | Noam 9 | Sapporo 12
+SPIRITS (bottle / glass):
+ Vodka: Ketel One 144/12 | Belvedere 192/16 | Tito's 156/13 | Russian Standard Platinum 108/9 | Suntory Haku 192/16
+ Gin: Tanqueray 144/12 | Tanqueray Ten 168/14 | Hendrick's 180/15 | Roku 180/15 | Aviation 168/14 | Monkey 47 288/24 | Gin Mare 216/18 | Sipsmith 192/16
+ Tequila & Mezcal: Mijenta Silver 156/13 | Mijenta Reposado 180/15 | Don Julio Blanco 228/19 | Don Julio Anejo 312/26 | Don Julio Reposado 264/22 | Don Julio 1942 780/65 | 1800 Anejo 216/18 | 1800 Blanco 168/14 | 1800 Reposado 192/16 | Alipus Mezcal 192/16 | G4 Blanco 216/18 | G4 Reposado 240/20
+ Blended Whisky: JW Gold Reserve 264/22 | JW Green 216/18 | JW Black 168/14 | JW Blue 744/62 | J&B Reserve 15 180/15 | Old Parr 12 168/14 | Bulleit Bourbon 168/14 | Bulleit Rye 180/15 | Chivas 18 336/28 | Chivas 12 168/14 | Monkey Shoulder 180/15 | Jameson 132/11 | Teeling Small Batch 180/15
+ Japanese Whisky: Hibiki Harmony 396/33 | Nikka Days 228/19 | Nikka From the Barrel 276/23
+ Single Malt: Singleton 12 180/15 | Singleton 15 264/22 | Glenfiddich 12 192/16 | Glenfiddich 18 336/28 | Glenfiddich 15 264/22 | Macallan 12 324/27 | Macallan 15 624/52 | Macallan 18 1056/88 | Glenmorangie X 180/15 | Glenmorangie Original 10 192/16 | Lagavulin 8 276/23
+ Cognac: Hennessy VSOP 264/22 | Hennessy XO 540/45
+ Rum: Captain Morgan Spiced Gold 144/12 | Captain Morgan Black 144/12 | Captain Morgan White 132/11 | Ron Zacapa 23 264/22
+ Liqueurs & Vermouth: Aperol 144/12 | Campari 144/12 | Baileys 108/9 | Kahlua 108/9 | Skinos 168/14 | St-Germain 156/13 | Jagermeister 168/14 | Cointreau 156/13 | Disaronno 180/15 | Pernod 144/12 | Fernet Branca 180/15 | Martini Rosato/Bianco/Extra Dry/Rosso 144/12 each | Monin Triple Sec 132/11 | Limoncello Bottega 144/12
+SOFT: Sohat small 3.5 | Sohat big 6 | Perrier 4 | San Pellegrino big 8 | House Tea 5.5 | Lemonade 7 | Pepsi/Diet Pepsi/7Up/Diet 7Up 4 | 3 Cents Tonic 4 | 3 Cents Soda 4
+COFFEE: Espresso 3 | Cappuccino 6 | Tea 4

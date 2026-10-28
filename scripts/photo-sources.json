@@ -1,0 +1,339 @@
+{
+  "_comment": "Source photos come from @saltfish.lb on Instagram (research/instagram/photos). Run `npm run images` after adding or replacing a photo.",
+  "naccache-dining-room": {
+    "src": "063_DWjUN1GiE8o_0.jpg",
+    "alt": {
+      "en": "The Naccache dining room glowing red, candles burning in wine bottles",
+      "ar": "صالة النقاش بإضاءة حمراء وشموع بقناني النبيذ",
+      "fr": "La salle de Naccache baignée de rouge, bougies dans des bouteilles de vin"
+    }
+  },
+  "handrolls-tile-counter": {
+    "src": "098_DSHwj0EiKOw_0.jpg",
+    "alt": {
+      "en": "Hand rolls lined up on the red tiled counter",
+      "ar": "هاند رولز مصفوفة على الكاونتر بالبلاط الأحمر",
+      "fr": "Hand rolls alignés sur le comptoir carrelé rouge"
+    }
+  },
+  "oysters-red-tile": {
+    "src": "007_Dcx5kCJus5a_0.jpg",
+    "alt": {
+      "en": "Oysters on ice with lemon on a red tile table",
+      "ar": "محار على التلج مع حامض على طاولة بلاط أحمر",
+      "fr": "Huîtres sur glace et citron sur une table carrelée rouge"
+    }
+  },
+  "oysters-faqra": {
+    "src": "122_DNA-OGdsVqo_0.jpg",
+    "alt": {
+      "en": "A platter of freshly shucked oysters in Faqra",
+      "ar": "صحن محار طازج بفقرا",
+      "fr": "Un plateau d'huîtres fraîchement ouvertes à Faqra"
+    }
+  },
+  "zaatar-tiradito": {
+    "src": "142_DGv-2MBs9GS_0.jpg",
+    "alt": {
+      "en": "Zaatar white fish tiradito in a pool of herb oil",
+      "ar": "تيراديتو سمك أبيض بالزعتر بزيت الأعشاب",
+      "fr": "Tiradito de poisson blanc au zaatar dans une huile aux herbes"
+    }
+  },
+  "crudo-passion-fruit-martini": {
+    "src": "039_DadKK2tIegP_0.jpg",
+    "alt": {
+      "en": "Crudo passion fruit martini in a bowl",
+      "ar": "كرودو باشن فروت مارتيني",
+      "fr": "Crudo passion façon martini dans un bol"
+    }
+  },
+  "poke-bowl": {
+    "src": "004_DetdyLaO3yq_0.jpg",
+    "alt": {
+      "en": "Poke bowl next to a cocktail and a panda chopstick holder",
+      "ar": "بوكي بول حدّ كوكتيل وحامل عيدان على شكل باندا",
+      "fr": "Poke bowl à côté d'un cocktail et d'un repose-baguettes panda"
+    }
+  },
+  "handroll-slate": {
+    "src": "118_DNVxU2lsPHn_0.jpg",
+    "alt": {
+      "en": "A hand roll on a black slate with soy sauce",
+      "ar": "هاند رول على صحن حجر أسود مع صويا",
+      "fr": "Un hand roll sur ardoise noire avec sauce soja"
+    }
+  },
+  "torched-salmon-nigiri": {
+    "src": "066_DWY8d49iK6Y_0.jpg",
+    "alt": {
+      "en": "Salmon belly nigiri being torched",
+      "ar": "نيغيري بطن سلمون عم ينشوى بالشعلة",
+      "fr": "Nigiri de ventre de saumon passé au chalumeau"
+    }
+  },
+  "salmon-sashimi": {
+    "src": "061_DW_rGOSjcRt_0.jpg",
+    "alt": {
+      "en": "A slice of salmon sashimi dipped in soy with chopsticks",
+      "ar": "قطعة ساشيمي سلمون بالعيدان مع صويا",
+      "fr": "Une tranche de sashimi de saumon trempée dans la sauce soja"
+    }
+  },
+  "lobster-roll": {
+    "src": "024_DcJdJHETm82_0.jpg",
+    "alt": {
+      "en": "Lobster roll on a metal tray with fries",
+      "ar": "لوبستر رول على صينية مع بطاطا",
+      "fr": "Lobster roll sur un plateau en métal avec frites"
+    }
+  },
+  "caviar-burger": {
+    "src": "065_DWbMfQZCAlw_0.jpg",
+    "alt": {
+      "en": "Caviar being spooned onto the caviar fish burger",
+      "ar": "كافيار عم ينحط على الكافيار فيش برغر",
+      "fr": "Du caviar déposé à la cuillère sur le Caviar Fish Burger"
+    }
+  },
+  "cheeseburger-spread": {
+    "src": "043_DZffsILoX_a_0.jpg",
+    "alt": {
+      "en": "Cheeseburger and cocktails on an orange table",
+      "ar": "تشيز برغر وكوكتيلات على طاولة برتقالية",
+      "fr": "Cheeseburger et cocktails sur une table orange"
+    }
+  },
+  "burger-fries": {
+    "src": "109_DOf0HoUCJ1h_0.jpg",
+    "alt": {
+      "en": "Burger and fries on striped paper",
+      "ar": "برغر وبطاطا على ورق مخطّط",
+      "fr": "Burger et frites sur papier rayé"
+    }
+  },
+  "wagyu-grill": {
+    "src": "089_DTalfLhiPAR_0.jpg",
+    "alt": {
+      "en": "Wagyu steak over open flames on the grill",
+      "ar": "ستيك واغيو عالنار",
+      "fr": "Steak de wagyu sur les flammes du grill"
+    }
+  },
+  "cala-milanese": {
+    "src": "055_DXocsrxiA1b_0.jpg",
+    "alt": {
+      "en": "Giant calamari Milanese on a plate",
+      "ar": "كاليماري عملاق عالطريقة الميلانية",
+      "fr": "Calamar géant à la milanaise"
+    }
+  },
+  "donburi": {
+    "src": "149_DFpkq-UMERn_0.jpg",
+    "alt": {
+      "en": "Miso-glazed salmon donburi with greens",
+      "ar": "دونبوري سلمون بالميسو مع خضار",
+      "fr": "Donburi de saumon laqué au miso et légumes verts"
+    }
+  },
+  "moules": {
+    "src": "003_De1QQFwuJD-_0.jpg",
+    "alt": {
+      "en": "A bowl of moules marinières",
+      "ar": "صحن بلح البحر مارينيير",
+      "fr": "Un bol de moules marinières"
+    }
+  },
+  "mussels": {
+    "src": "165_DC9fWR2s2G7_0.jpg",
+    "alt": {
+      "en": "Mussels in a pot",
+      "ar": "بلح البحر بطنجرة",
+      "fr": "Des moules en cocotte"
+    }
+  },
+  "lemon-tart": {
+    "src": "114_DN5HgP8iPLp_0.jpg",
+    "alt": {
+      "en": "Lemon tart topped with torched meringue",
+      "ar": "تارت الحامض مع مارينغ محروق",
+      "fr": "Tarte au citron meringuée"
+    }
+  },
+  "tomatini": {
+    "src": "092_DS4r07uiC5C_0.jpg",
+    "alt": {
+      "en": "The Tomatini cocktail with a cherry tomato, by candlelight",
+      "ar": "كوكتيل التوماتيني مع بندورة كرزية عضو الشمعة",
+      "fr": "Le cocktail Tomatini et sa tomate cerise, à la bougie"
+    }
+  },
+  "dirty-martini": {
+    "src": "005_DejoqOmu6pg_0_reelcover.jpg",
+    "alt": {
+      "en": "Martini with a long skewer of olives",
+      "ar": "مارتيني مع سيخ زيتون طويل",
+      "fr": "Martini avec une longue brochette d'olives"
+    }
+  },
+  "sake-shelf": {
+    "src": "094_DSkDBLqiKmD_0.jpg",
+    "alt": {
+      "en": "Sake bottles on the red tiled shelf",
+      "ar": "قناني ساكي عالرف بالبلاط الأحمر",
+      "fr": "Bouteilles de saké sur l'étagère carrelée rouge"
+    }
+  },
+  "sake-handroll": {
+    "src": "074_DUyT1fViGwg_0.jpg",
+    "alt": {
+      "en": "Sake carafe and a hand roll on the counter",
+      "ar": "إبريق ساكي وهاند رول عالكاونتر",
+      "fr": "Carafe de saké et hand roll sur le comptoir"
+    }
+  },
+  "terrace-candles": {
+    "src": "010_DeOk30TugMh_0_reelcover.jpg",
+    "alt": {
+      "en": "Candlelit terrace at night",
+      "ar": "التيراس بالليل عضو الشموع",
+      "fr": "La terrasse à la bougie, le soir"
+    }
+  },
+  "the-crew-counter": {
+    "src": "103_DRmPMnFiINF_0.jpg",
+    "alt": {
+      "en": "The Saltfish team behind the counter",
+      "ar": "فريق سولت فيش ورا الكاونتر",
+      "fr": "L'équipe Saltfish derrière le comptoir"
+    }
+  },
+  "the-crew": {
+    "src": "029_Dbnd6nGuV1__0.jpg",
+    "alt": {
+      "en": "The Faqra kitchen crew in aprons",
+      "ar": "فريق مطبخ فقرا بالمراييل",
+      "fr": "L'équipe cuisine de Faqra en tablier"
+    }
+  },
+  "kitchen-motion": {
+    "src": "083_DUD4eS-iL5B_0.jpg",
+    "alt": {
+      "en": "The kitchen in motion during service",
+      "ar": "المطبخ بنص السرفيس",
+      "fr": "La cuisine en plein service"
+    }
+  },
+  "faqra-terrace": {
+    "src": "193_C--iJiBsUgH_0.jpg",
+    "alt": {
+      "en": "Guests on the leafy Faqra terrace under the Saltfish sign",
+      "ar": "زوار على تيراس فقرا الأخضر تحت يافطة سولت فيش",
+      "fr": "Des convives sur la terrasse verdoyante de Faqra, sous l'enseigne Saltfish"
+    }
+  },
+  "faqra-cocktails": {
+    "src": "121_DNA-VB5seU4_0.jpg",
+    "alt": {
+      "en": "Two red cocktails clinking outdoors in Faqra",
+      "ar": "كاستين كوكتيل أحمر بفقرا",
+      "fr": "Deux cocktails rouges trinquent en plein air à Faqra"
+    }
+  },
+  "faqra-poster": {
+    "src": "034_DbVc1BEOvid_0.jpg",
+    "alt": {
+      "en": "Saltfish Faqra poster: the yellow fish mascot with a martini and a hand roll",
+      "ar": "بوستر سولت فيش فقرا: السمكة الصفرا مع مارتيني وهاند رول",
+      "fr": "Affiche Saltfish Faqra : le poisson jaune avec un martini et un hand roll"
+    }
+  },
+  "packed-room": {
+    "src": "168_DCmHkyWM3Fj_0.jpg",
+    "alt": {
+      "en": "A packed room on a party night",
+      "ar": "الصالة مليانة بليلة سهرة",
+      "fr": "Une salle comble un soir de fête"
+    }
+  },
+  "table-spread": {
+    "src": "022_DcdmWmLuma1_0.jpg",
+    "alt": {
+      "en": "A spread of dishes and the Saltfish menu sheet on an orange table",
+      "ar": "أطباق منوّعة وورقة المنيو على طاولة برتقالية",
+      "fr": "Un assortiment de plats et la carte Saltfish sur une table orange"
+    }
+  },
+  "burger-beer": {
+    "src": "058_DXZe8pNiMwI_0.jpg",
+    "alt": {
+      "en": "Burger and a cold beer being served",
+      "ar": "برغر وبيرة باردة",
+      "fr": "Burger et bière fraîche servis à table"
+    }
+  },
+  "neon-sign": {
+    "src": "153_DFKybI6M1z-_0.jpg",
+    "alt": {
+      "en": "The red neon Saltfish sign",
+      "ar": "يافطة سولت فيش النيون الحمرا",
+      "fr": "L'enseigne néon rouge Saltfish"
+    }
+  },
+  "shrimp-skillet": {
+    "src": "115_DNqAk9WI2XY_0.jpg",
+    "alt": {
+      "en": "Shrimp in a black skillet with lemon",
+      "ar": "قريدس بمقلاية سودا مع حامض",
+      "fr": "Crevettes dans une poêle noire avec du citron"
+    }
+  },
+  "pasta-ikura": {
+    "src": "113_DOA9aTHCCis_0.jpg",
+    "alt": {
+      "en": "Pasta topped with ikura on a striped plate",
+      "ar": "باستا مع إيكورا على صحن مخطّط",
+      "fr": "Pâtes garnies d'ikura sur une assiette rayée"
+    }
+  },
+  "raw-bar-plates": {
+    "src": "045_DZF3nzxuLAf_0.jpg",
+    "alt": {
+      "en": "Raw bar plates being served",
+      "ar": "أطباق البار النيء",
+      "fr": "Assiettes du bar cru servies à table"
+    }
+  },
+  "handroll-logo": {
+    "src": "009_Dd0vrOnOiTj_0_reelcover.jpg",
+    "alt": {
+      "en": "The wagyu hand roll with the Saltfish logo",
+      "ar": "هاند رول الواغيو مع لوغو سولت فيش",
+      "fr": "Le hand roll wagyu et le logo Saltfish"
+    }
+  },
+  "shrimp-caesar-poster": {
+    "src": "052_DYE7HZ8CLhj_0.jpg",
+    "alt": {
+      "en": "Illustrated poster for the Shrimp Caesar Sourdough",
+      "ar": "بوستر مرسوم لساندويش شريمب سيزر ساوردو",
+      "fr": "Affiche illustrée du Shrimp Caesar Sourdough"
+    }
+  },
+  "craving-poster": {
+    "src": "106_DRXvuYQjuXl_0.jpg",
+    "alt": {
+      "en": "Illustrated poster: The Craving, the caviar fish burger",
+      "ar": "بوستر مرسوم: The Craving، الكافيار فيش برغر",
+      "fr": "Affiche illustrée : The Craving, le Caviar Fish Burger"
+    }
+  },
+  "octo-skewer": {
+    "src": "070_DVa-XzjiMqE_0.jpg",
+    "alt": {
+      "en": "Octopus skewer with peppers and olives",
+      "ar": "سيخ أخطبوط مع فليفلة وزيتون",
+      "fr": "Brochette de poulpe, poivrons et olives"
+    }
+  }
+}

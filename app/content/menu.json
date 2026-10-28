@@ -1,0 +1,148 @@
+{
+  "currency": "USD",
+  "source": "order.ringnbring.com/saltfish (in-house menu, captured 28 Oct 2026)",
+  "categories": [
+    {
+      "id": "first-plates",
+      "name": { "en": "First Plates", "ar": "أطباق أولى", "fr": "Premières assiettes" },
+      "photo": "octo-skewer",
+      "items": [
+        { "id": "dutch-gouda-cheese-plate", "name": "Dutch Gouda Cheese Plate", "desc": null, "price": 15, "portion": null, "tags": ["vegetarian"], "photo": null },
+        { "id": "chorizo-iberico-slices", "name": "Chorizo Iberico Slices", "desc": null, "price": 15, "portion": null, "tags": [], "photo": null },
+        { "id": "aged-gruyere-cheese-plate", "name": "Aged Gruyère Cheese Plate", "desc": null, "price": 19, "portion": null, "tags": ["vegetarian"], "photo": null },
+        { "id": "jamon-iberico-slices", "name": "Jamón Ibérico Slices", "desc": { "en": "Pan con tomate", "ar": "مع خبز بالبندورة (Pan con tomate)", "fr": "Pan con tomate" }, "price": 29, "portion": null, "tags": [], "photo": null },
+        { "id": "octo-skewer", "name": "Octo Skewer", "desc": { "en": "Grilled octopus, pickled peppers, olives", "ar": "أخطبوط مشوي، فليفلة مكبوسة، زيتون", "fr": "Poulpe grillé, poivrons marinés, olives" }, "price": 12, "portion": { "en": "Per piece", "ar": "للقطعة", "fr": "La pièce" }, "tags": ["signature"], "photo": "octo-skewer" },
+        { "id": "calamari-skewer", "name": "Calamari Skewer", "desc": { "en": "Chargrilled, lemon mustard, pomegranate", "ar": "مشوي على الفحم، خردل بالحامض، رمان", "fr": "Grillé au charbon, moutarde citronnée, grenade" }, "price": 18, "portion": { "en": "Per piece", "ar": "للقطعة", "fr": "La pièce" }, "tags": [], "photo": null },
+        { "id": "provencal-shrimp", "name": "Provençal Shrimp", "desc": { "en": "Herb-battered shrimp, garlic, lemon juice and sourdough bread", "ar": "قريدس بخلطة أعشاب، ثوم، عصير حامض وخبز ساوردو", "fr": "Crevettes en pâte aux herbes, ail, jus de citron et pain au levain" }, "price": 21, "portion": null, "tags": ["favorite"], "photo": null },
+        { "id": "corn-ribs", "name": "Corn Ribs", "desc": { "en": "Fresh corn sautéed in olive oil and butter, mixed peppers, fresh lemon", "ar": "ذرة طازجة مقلّبة بزيت الزيتون والزبدة، فليفلة مشكّلة وحامض", "fr": "Maïs frais sauté à l'huile d'olive et au beurre, poivrons, citron frais" }, "price": 9, "portion": null, "tags": ["vegetarian"], "photo": null },
+        { "id": "thinly-sliced-shrimp", "name": "Thinly Sliced Shrimp", "desc": { "en": "Shrimp, extra virgin olive oil, lemon juice", "ar": "قريدس مقطّع رقيق، زيت زيتون بكر، عصير حامض", "fr": "Crevettes finement tranchées, huile d'olive vierge extra, jus de citron" }, "price": 23, "portion": null, "tags": ["raw"], "photo": null },
+        { "id": "calamari-fritti", "name": "Calamari Fritti", "desc": { "en": "Crispy calamari, tartare sauce", "ar": "كاليماري مقرمش مع صلصة التارتار", "fr": "Calamars croustillants, sauce tartare" }, "price": 24, "portion": null, "tags": [], "photo": null },
+        { "id": "chick-is-the-word", "name": "Chick Is The Word", "desc": { "en": "Crispy boneless chicken bites, kimchi mayo", "ar": "قطع دجاج مقرمشة بلا عضم، مايونيز بالكيمتشي", "fr": "Bouchées de poulet croustillantes, mayo kimchi" }, "price": 15, "portion": null, "tags": [], "photo": null }
+      ]
+    },
+    {
+      "id": "salads",
+      "name": { "en": "Salads", "ar": "سلطات", "fr": "Salades" },
+      "photo": null,
+      "items": [
+        { "id": "green-salad", "name": "Green Salad", "desc": { "en": "Baby gem lettuce, pumpkin seeds, mustard vinaigrette", "ar": "خس بيبي جيم، بزر يقطين، صلصة الخردل", "fr": "Sucrine, graines de courge, vinaigrette à la moutarde" }, "price": 14, "portion": null, "tags": ["vegetarian"], "photo": null },
+        { "id": "caesar-salad", "name": "Caesar Salad", "desc": { "en": "Classic Caesar, fried capers, gem lettuce, Parmigiano. Add chargrilled shrimp for $9", "ar": "سيزر كلاسيك، قبّار مقلي، خس جيم، بارميجانو. زيد قريدس مشوي بـ ٩$", "fr": "César classique, câpres frites, sucrine, parmigiano. Crevettes grillées en supplément : 9 $" }, "price": 15, "portion": null, "tags": [], "photo": null },
+        { "id": "shrimp-tabboule", "name": "Shrimp Tabboule", "desc": { "en": "Almond, crispy quinoa, pomegranate, cucumber, parsley, mint, grape verjuice, orange blossom water", "ar": "لوز، كينوا مقرمشة، رمان، خيار، بقدونس، نعنع، حصرم، ماء زهر", "fr": "Amandes, quinoa croustillant, grenade, concombre, persil, menthe, verjus, eau de fleur d'oranger" }, "price": 21, "portion": null, "tags": ["signature"], "photo": null }
+      ]
+    },
+    {
+      "id": "raw-bar",
+      "name": { "en": "Raw Bar", "ar": "البار النيء", "fr": "Bar cru" },
+      "photo": "zaatar-tiradito",
+      "items": [
+        { "id": "zaatar-white-fish-tiradito", "name": "Zaatar White Fish Tiradito", "desc": { "en": "Zaatar-cured yellowtail, wild thyme, zaatar-infused oil", "ar": "يلوتايل منقوع بالزعتر، زعتر برّي، زيت بالزعتر", "fr": "Sériole maturée au zaatar, thym sauvage, huile infusée au zaatar" }, "price": 24, "portion": null, "tags": ["raw", "signature", "favorite"], "photo": "zaatar-tiradito" },
+        { "id": "salmon-ceviche", "name": "Salmon Ceviche", "desc": { "en": "Citrus-cured salmon, avocado, strawberries, coriander, onion", "ar": "سلمون منقوع بالحمضيات، أفوكا، فريز، كزبرة، بصل", "fr": "Saumon mariné aux agrumes, avocat, fraises, coriandre, oignon" }, "price": 29, "portion": null, "tags": ["raw"], "photo": null },
+        { "id": "crudo-passion-fruit-martini", "name": "Crudo Passion Fruit Martini", "desc": { "en": "Trio crudo of salmon, tuna and yellowtail sashimi, topped with a passion fruit martini sauce", "ar": "ثلاثي كرودو سلمون وتونا ويلوتايل ساشيمي، مع صلصة باشن فروت مارتيني", "fr": "Trio de crudo saumon, thon et sériole, nappé d'une sauce passion façon martini" }, "price": 32, "portion": null, "tags": ["raw", "signature"], "photo": "crudo-passion-fruit-martini" },
+        { "id": "chutoro-kebbeh-nayyeh", "name": "Chutoro Kebbeh Nayyeh", "desc": { "en": "Chutoro tuna, burghul, radish, mint, basil, lemon & chilli, served with nori leaves & pickled onions", "ar": "تونا شوتورو، برغل، فجل، نعنع، حبق، حامض وحرّ، مع ورق النوري وبصل مكبوس", "fr": "Thon chutoro, boulgour, radis, menthe, basilic, citron et piment, servi avec feuilles de nori et oignons marinés" }, "price": 38, "portion": null, "tags": ["raw", "spicy", "signature"], "photo": null },
+        { "id": "poke-bowl", "name": "Poke Bowl", "desc": { "en": "Salmon, tuna or white fish sashimi, edamame, avocado, mango, radish, carrot, pickled ginger, red cabbage, rice, black sesame, ikura, sesame-ginger dressing", "ar": "ساشيمي سلمون أو تونا أو سمك أبيض، إدامامي، أفوكا، مانغا، فجل، جزر، زنجبيل مكبوس، ملفوف أحمر، رز، سمسم أسود، إيكورا، صلصة سمسم وزنجبيل", "fr": "Sashimi de saumon, thon ou poisson blanc, edamame, avocat, mangue, radis, carotte, gingembre mariné, chou rouge, riz, sésame noir, ikura, sauce sésame-gingembre" }, "price": 28, "portion": null, "tags": ["raw"], "photo": "poke-bowl" }
+      ]
+    },
+    {
+      "id": "handrolls",
+      "name": { "en": "Handrolls", "ar": "هاند رولز", "fr": "Hand rolls" },
+      "note": { "en": "Per piece, rolled at the counter. Eat it straight away while the nori is crisp.", "ar": "للقطعة، بينلفّ ع الكاونتر. كولها فورًا قبل ما يطرى النوري.", "fr": "À la pièce, roulé au comptoir. À déguster tout de suite, tant que le nori est croustillant." },
+      "photo": "handrolls-tile-counter",
+      "items": [
+        { "id": "salmon-handroll", "name": "Salmon Handroll", "desc": null, "price": 11, "portion": { "en": "Per piece", "ar": "للقطعة", "fr": "La pièce" }, "tags": ["raw", "favorite"], "photo": "handroll-slate" },
+        { "id": "tuna-handroll", "name": "Tuna Handroll", "desc": null, "price": 10, "portion": { "en": "Per piece", "ar": "للقطعة", "fr": "La pièce" }, "tags": ["raw", "favorite"], "photo": null },
+        { "id": "yellowtail-handroll", "name": "Yellowtail Handroll", "desc": null, "price": 10, "portion": { "en": "Per piece", "ar": "للقطعة", "fr": "La pièce" }, "tags": ["raw"], "photo": null },
+        { "id": "shrimp-handroll", "name": "Shrimp Handroll", "desc": null, "price": 10, "portion": { "en": "Per piece", "ar": "للقطعة", "fr": "La pièce" }, "tags": [], "photo": null },
+        { "id": "ikura-handroll", "name": "Ikura Handroll", "desc": null, "price": 16, "portion": { "en": "Per piece", "ar": "للقطعة", "fr": "La pièce" }, "tags": ["raw"], "photo": null },
+        { "id": "fresh-crab-handroll", "name": "Fresh Crab Handroll", "desc": null, "price": 14, "portion": { "en": "Per piece", "ar": "للقطعة", "fr": "La pièce" }, "tags": [], "photo": null },
+        { "id": "spicy-wagyu-handroll", "name": "Spicy Wagyu Handroll", "desc": null, "price": 15, "portion": { "en": "Per piece", "ar": "للقطعة", "fr": "La pièce" }, "tags": ["spicy", "signature"], "photo": null }
+      ]
+    },
+    {
+      "id": "nigiri",
+      "name": { "en": "Nigiri", "ar": "نيغيري", "fr": "Nigiri" },
+      "photo": "torched-salmon-nigiri",
+      "items": [
+        { "id": "torched-salmon-belly-nigiri", "name": "Torched Salmon Belly Nigiri", "desc": null, "price": 11, "portion": { "en": "2 pcs", "ar": "قطعتين", "fr": "2 pièces" }, "tags": ["favorite"], "photo": "torched-salmon-nigiri" },
+        { "id": "torched-wagyu-nigiri", "name": "Torched Wagyu Nigiri", "desc": null, "price": 15, "portion": { "en": "2 pcs", "ar": "قطعتين", "fr": "2 pièces" }, "tags": [], "photo": null },
+        { "id": "salmon-nigiri", "name": "Salmon Nigiri", "desc": null, "price": 10, "portion": { "en": "2 pcs", "ar": "قطعتين", "fr": "2 pièces" }, "tags": ["raw"], "photo": null },
+        { "id": "tuna-nigiri", "name": "Tuna Nigiri", "desc": null, "price": 9, "portion": { "en": "2 pcs", "ar": "قطعتين", "fr": "2 pièces" }, "tags": ["raw"], "photo": null },
+        { "id": "yellowtail-nigiri", "name": "Yellowtail Nigiri", "desc": null, "price": 9, "portion": { "en": "2 pcs", "ar": "قطعتين", "fr": "2 pièces" }, "tags": ["raw"], "photo": null }
+      ]
+    },
+    {
+      "id": "sashimi",
+      "name": { "en": "Sashimi", "ar": "ساشيمي", "fr": "Sashimi" },
+      "photo": "salmon-sashimi",
+      "items": [
+        { "id": "salmon-sashimi", "name": "Salmon Sashimi", "desc": null, "price": 15, "portion": { "en": "3 pcs", "ar": "٣ قطع", "fr": "3 pièces" }, "tags": ["raw"], "photo": "salmon-sashimi" },
+        { "id": "tuna-sashimi", "name": "Tuna Sashimi", "desc": null, "price": 14, "portion": { "en": "3 pcs", "ar": "٣ قطع", "fr": "3 pièces" }, "tags": ["raw"], "photo": null },
+        { "id": "yellowtail-sashimi", "name": "Yellowtail Sashimi", "desc": null, "price": 15, "portion": { "en": "3 pcs", "ar": "٣ قطع", "fr": "3 pièces" }, "tags": ["raw"], "photo": null }
+      ]
+    },
+    {
+      "id": "oysters",
+      "name": { "en": "Oysters", "ar": "محار", "fr": "Huîtres" },
+      "photo": "oysters-red-tile",
+      "items": [
+        { "id": "fine-de-claire-3", "name": "Fine de Claire #3", "desc": null, "price": 7, "portion": { "en": "Per piece", "ar": "للقطعة", "fr": "La pièce" }, "tags": ["raw", "favorite"], "photo": "oysters-red-tile" },
+        { "id": "gillardeau-2", "name": "Gillardeau #2", "desc": null, "price": 10, "portion": { "en": "Per piece", "ar": "للقطعة", "fr": "La pièce" }, "tags": ["raw", "signature"], "photo": "oysters-faqra" },
+        { "id": "gillardeau-3", "name": "Gillardeau #3", "desc": null, "price": 8, "portion": { "en": "Per piece", "ar": "للقطعة", "fr": "La pièce" }, "tags": ["raw"], "photo": null }
+      ]
+    },
+    {
+      "id": "handheld",
+      "name": { "en": "Handheld", "ar": "بالإيد", "fr": "À la main" },
+      "photo": "lobster-roll",
+      "items": [
+        { "id": "caviar-fish-burger", "name": "Caviar Fish Burger", "desc": { "en": "Battered fish, caviar, cheddar cheese, tartare sauce, dill pickles, brioche bun", "ar": "سمك مقلي بالعجينة، كافيار، جبنة شيدر، صلصة تارتار، كبيس بالشبت، خبز بريوش", "fr": "Poisson en beignet, caviar, cheddar, sauce tartare, cornichons à l'aneth, pain brioché" }, "price": 28, "portion": null, "tags": ["signature", "favorite"], "photo": "caviar-burger" },
+        { "id": "lobster-roll", "name": "Lobster Roll", "desc": { "en": "Fresh lobster, lime, Japanese mayo, toasted brioche roll", "ar": "لوبستر طازج، ليمون أخضر، مايونيز ياباني، خبز بريوش محمّص", "fr": "Homard frais, citron vert, mayo japonaise, pain brioché toasté" }, "price": 38, "portion": null, "tags": ["signature"], "photo": "lobster-roll" },
+        { "id": "octopus-roll", "name": "Octopus Roll", "desc": { "en": "Buttered octopus, spicy mayo, fresh coriander, radish, lemon, toasted brioche roll", "ar": "أخطبوط بالزبدة، مايونيز حرّ، كزبرة طازجة، فجل، حامض، خبز بريوش محمّص", "fr": "Poulpe au beurre, mayo épicée, coriandre fraîche, radis, citron, pain brioché toasté" }, "price": 32, "portion": null, "tags": ["spicy"], "photo": null },
+        { "id": "cheeseburger", "name": "Cheeseburger", "desc": { "en": "200 g Black Angus patty, cheddar, dill pickles", "ar": "قطعة لحم بلاك أنغوس ٢٠٠ غ، شيدر، كبيس بالشبت", "fr": "Steak Black Angus de 200 g, cheddar, cornichons à l'aneth" }, "price": 25, "portion": null, "tags": ["favorite"], "note": { "en": "Only 20 a day", "ar": "بس ٢٠ باليوم", "fr": "Seulement 20 par jour" }, "photo": "cheeseburger-spread" },
+        { "id": "shrimp-caesar-sourdough-sandwich", "name": "Shrimp Caesar Sourdough Sandwich", "desc": { "en": "Chargrilled shrimp, gem lettuce, parmesan, fried capers and Caesar dressing on toasted sourdough", "ar": "قريدس مشوي، خس جيم، بارميزان، قبّار مقلي وصلصة سيزر على خبز ساوردو محمّص", "fr": "Crevettes grillées, sucrine, parmesan, câpres frites et sauce César sur pain au levain toasté" }, "price": 26, "portion": null, "tags": [], "photo": null }
+      ]
+    },
+    {
+      "id": "mains",
+      "name": { "en": "Mains", "ar": "أطباق رئيسية", "fr": "Plats" },
+      "photo": "wagyu-grill",
+      "items": [
+        { "id": "sea-bass", "name": "Sea Bass", "desc": { "en": "Grilled, with sauce meunière or sauce vierge", "ar": "مشوي، مع صلصة مونيير أو صلصة ڤيارج", "fr": "Grillé, sauce meunière ou sauce vierge" }, "price": 42, "portion": null, "tags": [], "photo": null },
+        { "id": "cala-milanese", "name": "Cala Milanese", "desc": { "en": "Breaded, deep-fried giant calamari Milanese style, sauce vierge, fresh lemon", "ar": "كاليماري عملاق مقرمش عالطريقة الميلانية، صلصة ڤيارج، حامض طازج", "fr": "Calamar géant pané à la milanaise, sauce vierge, citron frais" }, "price": 32, "portion": null, "tags": ["signature"], "photo": "cala-milanese" },
+        { "id": "ribeye", "name": "Ribeye", "desc": { "en": "Australian Wagyu MB5, 350 g", "ar": "واغيو أسترالي MB5، ٣٥٠ غ", "fr": "Wagyu australien MB5, 350 g" }, "price": 68, "portion": null, "tags": [], "photo": "wagyu-grill" },
+        { "id": "tenderloin", "name": "Tenderloin", "desc": { "en": "Australian Wagyu MB9", "ar": "واغيو أسترالي MB9", "fr": "Wagyu australien MB9" }, "price": 68, "portion": null, "tags": [], "photo": null },
+        { "id": "mediter-asian-donburi", "name": "Mediter-Asian Donburi", "desc": { "en": "Grilled organic miso-marinated salmon, sushi rice, snow peas", "ar": "سلمون عضوي متبّل بالميسو ومشوي، رز سوشي، بازيلا ثلجية", "fr": "Saumon bio mariné au miso et grillé, riz à sushi, pois gourmands" }, "price": 38, "portion": null, "tags": ["favorite"], "photo": "donburi" },
+        { "id": "cajun-octo-stroganoff", "name": "Cajun Octo Stroganoff", "desc": { "en": "Sautéed octopus, mushrooms, creamy Cajun sauce, rice", "ar": "أخطبوط مقلّب، فطر، صلصة كاجون بالكريما، رز", "fr": "Poulpe sauté, champignons, sauce crémeuse cajun, riz" }, "price": 33, "portion": null, "tags": ["spicy"], "photo": null },
+        { "id": "spicy-shrimp-paccheri", "name": "Spicy Shrimp Paccheri", "desc": { "en": "Paccheri, shrimp, spicy vodka rosé cream sauce", "ar": "باكيري، قريدس، صلصة روزيه بالفودكا والكريما، حرّة", "fr": "Paccheri, crevettes, sauce rosée crémeuse à la vodka, relevée" }, "price": 35, "portion": null, "tags": ["spicy"], "photo": null },
+        { "id": "seafood-linguini", "name": "Seafood Linguini", "desc": { "en": "Pan-fried mussels, shrimp and calamari, cherry tomatoes, parsley, white wine, rich lobster bisque", "ar": "بلح البحر وقريدس وكاليماري مقلّبين، بندورة كرزية، بقدونس، نبيذ أبيض، بيسك لوبستر", "fr": "Moules, crevettes et calamars poêlés, tomates cerises, persil, vin blanc, bisque de homard" }, "price": 38, "portion": null, "tags": [], "photo": null },
+        { "id": "capellini-provencal", "name": "Capellini Provençal", "desc": { "en": "Parmigiano, lemon, butter, garlic, coriander", "ar": "بارميجانو، حامض، زبدة، ثوم، كزبرة", "fr": "Parmigiano, citron, beurre, ail, coriandre" }, "price": 18, "portion": null, "tags": ["vegetarian"], "photo": null },
+        { "id": "bizri-and-fries", "name": "Bizri & Fries", "desc": { "en": "Fried sardines, spicy tahini", "ar": "بزري مقلي، طحينة حرّة", "fr": "Petites sardines frites, tahini relevé" }, "price": 21, "portion": null, "tags": ["spicy"], "photo": null },
+        { "id": "fish-and-chips", "name": "Fish & Chips", "desc": { "en": "Battered fish, tartare sauce, fries", "ar": "سمك مقلي بالعجينة، صلصة تارتار، بطاطا", "fr": "Poisson en beignet, sauce tartare, frites" }, "price": 29, "portion": null, "tags": [], "photo": null },
+        { "id": "moules-marinieres", "name": "Moules Marinières", "desc": null, "price": 32, "portion": null, "tags": [], "photo": "moules" }
+      ]
+    },
+    {
+      "id": "sides",
+      "name": { "en": "Sides", "ar": "أطباق جانبية", "fr": "Accompagnements" },
+      "photo": null,
+      "items": [
+        { "id": "sauteed-veggies", "name": "Sautéed Veggies", "desc": { "en": "Zucchini, snow peas, baby carrots, mushrooms", "ar": "كوسا، بازيلا ثلجية، جزر صغير، فطر", "fr": "Courgettes, pois gourmands, mini-carottes, champignons" }, "price": 12, "portion": null, "tags": ["vegetarian"], "photo": null },
+        { "id": "rice-bowl", "name": "Rice Bowl", "desc": null, "price": 6, "portion": null, "tags": ["vegetarian"], "photo": null },
+        { "id": "homemade-fries", "name": "Homemade Fries", "desc": null, "price": 8, "portion": null, "tags": ["vegetarian", "favorite"], "photo": null }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": { "en": "Desserts", "ar": "حلويات", "fr": "Desserts" },
+      "photo": "lemon-tart",
+      "items": [
+        { "id": "debes-tahini", "name": "Debes Tahini", "desc": { "en": "Layered Lebanese classic: carob molasses, tahini, biscuit crumble, vanilla ice cream", "ar": "كلاسيكية لبنانية بطبقات: دبس خرّوب، طحينة، بسكويت مفتّت، بوظة فانيلا", "fr": "Classique libanais en couches : mélasse de caroube, tahini, crumble de biscuit, glace vanille" }, "price": 12, "portion": null, "tags": ["vegetarian", "signature"], "photo": null },
+        { "id": "chocolate-mousse", "name": "Chocolate Mousse", "desc": { "en": "With sea salt, fried capers and virgin olive oil", "ar": "مع ملح البحر، قبّار مقلي وزيت زيتون بكر", "fr": "Au sel de mer, câpres frites et huile d'olive vierge" }, "price": 9, "portion": null, "tags": ["vegetarian"], "photo": null },
+        { "id": "basque-cheesecake", "name": "Basque Cheesecake", "desc": { "en": "Rich and creamy baked cheesecake", "ar": "تشيز كيك مخبوز، غني وكريمي", "fr": "Cheesecake cuit, riche et crémeux" }, "price": 18, "portion": null, "tags": ["vegetarian"], "photo": null },
+        { "id": "cookie-skillet", "name": "Cookie Skillet", "desc": { "en": "Hot, gooey cookie with vanilla ice cream", "ar": "كوكي سخنة وطرية مع بوظة فانيلا", "fr": "Cookie chaud et fondant, glace vanille" }, "price": 18, "portion": { "en": "Made to share", "ar": "للمشاركة", "fr": "À partager" }, "tags": ["vegetarian"], "photo": null },
+        { "id": "lemon-tart", "name": "Lemon Tart", "desc": { "en": "Lemon curd, meringue", "ar": "كريمة الحامض، مارينغ", "fr": "Crème de citron, meringue" }, "price": 14, "portion": null, "tags": ["vegetarian"], "photo": "lemon-tart" },
+        { "id": "affogato", "name": "Affogato", "desc": { "en": "Vanilla ice cream, espresso shot", "ar": "بوظة فانيلا، شوت إسبريسو", "fr": "Glace vanille, shot d'espresso" }, "price": 9, "portion": null, "tags": ["vegetarian"], "photo": null },
+        { "id": "ice-cream-sorbet", "name": "Ice Cream | Sorbet", "desc": { "en": "Ask for today's flavours", "ar": "اسأل عن نكهات اليوم", "fr": "Demandez les parfums du jour" }, "price": 5, "portion": { "en": "Per scoop", "ar": "للطابة", "fr": "La boule" }, "tags": ["vegetarian"], "photo": null }
+      ]
+    }
+  ]
+}

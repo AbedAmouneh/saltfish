@@ -1,0 +1,1294 @@
+{
+  "currency": "USD",
+  "source": "order.ringnbring.com/saltfish (beverages, captured 28 Oct 2026)",
+  "sections": [
+    {
+      "id": "cocktails",
+      "name": {
+        "en": "Cocktails",
+        "ar": "كوكتيلات",
+        "fr": "Cocktails"
+      },
+      "photo": "tomatini",
+      "groups": [
+        {
+          "id": "house-specials",
+          "name": {
+            "en": "House specials",
+            "ar": "كوكتيلات البيت",
+            "fr": "Créations maison"
+          },
+          "items": [
+            {
+              "id": "tomatini",
+              "name": "Tomatini",
+              "price": 14,
+              "desc": {
+                "en": "Vodka, tomato, lemon, black pepper",
+                "ar": "فودكا، بندورة، حامض، بهار أسود",
+                "fr": "Vodka, tomate, citron, poivre noir"
+              },
+              "tags": ["signature", "favorite"],
+              "photo": "tomatini"
+            },
+            {
+              "id": "picante",
+              "name": "Picante",
+              "price": 14,
+              "desc": {
+                "en": "Tequila, agave, chili pepper, coriander and lime",
+                "ar": "تيكيلا، أغاڤي، فليفلة حرّة، كزبرة وليمون أخضر",
+                "fr": "Tequila, agave, piment, coriandre et citron vert"
+              },
+              "tags": ["spicy"]
+            },
+            {
+              "id": "beet-it",
+              "name": "Beet-It",
+              "price": 14,
+              "desc": {
+                "en": "Mezcal, tequila blanco, beetroot cordial",
+                "ar": "ميزكال، تيكيلا بلانكو، شراب الشمندر",
+                "fr": "Mezcal, tequila blanco, cordial de betterave"
+              },
+              "tags": []
+            },
+            {
+              "id": "sake-spritz",
+              "name": "Sake Spritz",
+              "price": 15,
+              "desc": {
+                "en": "Sake, white vermouth, elderflower, cucumber bitters, prosecco",
+                "ar": "ساكي، فيرموث أبيض، زهر البلسان، بيترز الخيار، بروسيكو",
+                "fr": "Saké, vermouth blanc, sureau, bitter concombre, prosecco"
+              },
+              "tags": []
+            },
+            {
+              "id": "mezcal-mule",
+              "name": "Mezcal Mule",
+              "price": 15,
+              "desc": {
+                "en": "A take on the classic mule: mezcal, tequila, mango, maple and lemon, topped with soda",
+                "ar": "نسختنا من الميول: ميزكال، تيكيلا، مانغا، شراب القيقب وحامض، مع صودا",
+                "fr": "Notre version du mule : mezcal, tequila, mangue, érable et citron, allongé de soda"
+              },
+              "tags": []
+            },
+            {
+              "id": "japanese-negroni",
+              "name": "Japanese Negroni",
+              "price": 15,
+              "desc": {
+                "en": "Japanese gin infused with oolong tea, umeshu red wine, Italicus, Campari",
+                "ar": "جن ياباني منقوع بشاي أولونغ، نبيذ أوميشو أحمر، إيتاليكوس، كامباري",
+                "fr": "Gin japonais infusé au thé oolong, vin rouge umeshu, Italicus, Campari"
+              },
+              "tags": ["signature"]
+            },
+            {
+              "id": "sake-martini",
+              "name": "Sake Martini",
+              "price": 14,
+              "desc": {
+                "en": "Sake, elderflower, vodka, cucumber bitters, vermouth",
+                "ar": "ساكي، زهر البلسان، فودكا، بيترز الخيار، فيرموث",
+                "fr": "Saké, sureau, vodka, bitter concombre, vermouth"
+              },
+              "tags": []
+            },
+            {
+              "id": "berry-smash",
+              "name": "Berry Smash",
+              "price": 13,
+              "desc": {
+                "en": "Gin infused with berries, Cocchi Rosa, basil, sour mix",
+                "ar": "جن منقوع بالتوت، كوكي روزا، حبق، سار ميكس",
+                "fr": "Gin infusé aux baies, Cocchi Rosa, basilic, sour mix"
+              },
+              "tags": []
+            }
+          ]
+        },
+        {
+          "id": "classics",
+          "name": {
+            "en": "Classics",
+            "ar": "الكلاسيكيات",
+            "fr": "Classiques"
+          },
+          "items": [
+            {
+              "id": "aperol-spritz",
+              "name": "Aperol Spritz",
+              "price": 14
+            },
+            {
+              "id": "dry-martini",
+              "name": "Dry Martini",
+              "price": 12,
+              "desc": {
+                "en": "Gin with dry vermouth",
+                "ar": "جن مع فيرموث جاف",
+                "fr": "Gin et vermouth sec"
+              }
+            },
+            {
+              "id": "dirty-martini",
+              "name": "Dirty Martini",
+              "price": 13,
+              "photo": "dirty-martini"
+            },
+            {
+              "id": "negroni",
+              "name": "Negroni",
+              "price": 15
+            },
+            {
+              "id": "boulevardier",
+              "name": "Boulevardier",
+              "price": 15
+            },
+            {
+              "id": "old-fashioned",
+              "name": "Old Fashioned",
+              "price": 15
+            },
+            {
+              "id": "americano",
+              "name": "Americano",
+              "price": 14
+            },
+            {
+              "id": "passion-fruit-martini",
+              "name": "Passion Fruit Martini",
+              "price": 13
+            },
+            {
+              "id": "espresso-martini",
+              "name": "Espresso Martini",
+              "price": 13
+            },
+            {
+              "id": "margarita",
+              "name": "Margarita",
+              "price": 14
+            },
+            {
+              "id": "tommys-margarita",
+              "name": "Tommy's Margarita",
+              "price": 14
+            },
+            {
+              "id": "bloody-mary",
+              "name": "Bloody Mary",
+              "price": 13
+            },
+            {
+              "id": "moscow-mule",
+              "name": "Moscow Mule",
+              "price": 13
+            },
+            {
+              "id": "london-mule",
+              "name": "London Mule",
+              "price": 13
+            },
+            {
+              "id": "gin-basil-smash",
+              "name": "Gin Basil Smash",
+              "price": 13
+            },
+            {
+              "id": "gin-gimlet",
+              "name": "Gin Gimlet",
+              "price": 13
+            },
+            {
+              "id": "paloma",
+              "name": "Paloma",
+              "price": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wine",
+      "name": {
+        "en": "Wines & Bubbles",
+        "ar": "نبيذ وفقاعات",
+        "fr": "Vins & bulles"
+      },
+      "photo": "naccache-dining-room",
+      "priceLabels": true,
+      "groups": [
+        {
+          "id": "imported-white",
+          "name": {
+            "en": "Imported white",
+            "ar": "أبيض مستورد",
+            "fr": "Blancs importés"
+          },
+          "items": [
+            {
+              "id": "cotes-du-rhone-parallele-45-blanc-bio",
+              "name": "Côtes du Rhône Parallèle 45 Blanc Bio",
+              "price": 58,
+              "glass": 11
+            },
+            {
+              "id": "muchas-manos-white",
+              "name": "Muchas Manos (white)",
+              "price": 58,
+              "glass": 11
+            },
+            {
+              "id": "astoria-chardonnay",
+              "name": "Astoria Chardonnay",
+              "price": 58
+            },
+            {
+              "id": "astoria-pinot-grigio",
+              "name": "Astoria Pinot Grigio",
+              "price": 58
+            },
+            {
+              "id": "camioneta-verdejo",
+              "name": "Camioneta Verdejo",
+              "price": 68
+            },
+            {
+              "id": "gavi-di-gavi-marchesi-di-barolo",
+              "name": "Gavi di Gavi Marchesi di Barolo",
+              "price": 89
+            }
+          ]
+        },
+        {
+          "id": "imported-red",
+          "name": {
+            "en": "Imported red",
+            "ar": "أحمر مستورد",
+            "fr": "Rouges importés"
+          },
+          "items": [
+            {
+              "id": "cotes-du-rhone-parallele-45-rouge-bio",
+              "name": "Côtes du Rhône Parallèle 45 Rouge Bio",
+              "price": 58,
+              "glass": 11
+            },
+            {
+              "id": "muchas-manos-red",
+              "name": "Muchas Manos (red)",
+              "price": 58,
+              "glass": 11
+            },
+            {
+              "id": "astoria-pinot-noir",
+              "name": "Astoria Pinot Noir",
+              "price": 58
+            },
+            {
+              "id": "camioneta-tempranillo",
+              "name": "Camioneta Tempranillo",
+              "price": 68,
+              "glass": 12
+            },
+            {
+              "id": "matsu-carmen",
+              "name": "Matsu Carmen",
+              "price": 98
+            }
+          ]
+        },
+        {
+          "id": "imported-rose",
+          "name": {
+            "en": "Imported rosé",
+            "ar": "روزيه مستورد",
+            "fr": "Rosés importés"
+          },
+          "items": [
+            {
+              "id": "aix-rose-provence",
+              "name": "AIX Rosé, Provence",
+              "price": 68,
+              "glass": 12
+            },
+            {
+              "id": "by-ott-rose-provence",
+              "name": "By Ott Rosé, Provence",
+              "price": 78
+            }
+          ]
+        },
+        {
+          "id": "local-white",
+          "name": {
+            "en": "Lebanese white",
+            "ar": "أبيض لبناني",
+            "fr": "Blancs libanais"
+          },
+          "items": [
+            {
+              "id": "ksara-chardonnay",
+              "name": "Ksara Chardonnay",
+              "price": 44,
+              "glass": 8
+            },
+            {
+              "id": "ixsir-altitudes-white",
+              "name": "Ixsir Altitudes (white)",
+              "price": 42
+            },
+            {
+              "id": "ixsir-grande-reserve-white",
+              "name": "Ixsir Grande Réserve (white)",
+              "price": 46
+            },
+            {
+              "id": "b-qa-white",
+              "name": "B-QA White",
+              "price": 49,
+              "glass": 9
+            },
+            {
+              "id": "sept-obeideh",
+              "name": "Sept Obeideh",
+              "price": 49
+            },
+            {
+              "id": "chateau-marsyas-white",
+              "name": "Château Marsyas (white)",
+              "price": 76
+            },
+            {
+              "id": "bargylus-grand-vin-de-syrie-white",
+              "name": "Bargylus Grand Vin de Syrie (white)",
+              "price": 78
+            }
+          ]
+        },
+        {
+          "id": "local-red",
+          "name": {
+            "en": "Lebanese red",
+            "ar": "أحمر لبناني",
+            "fr": "Rouges libanais"
+          },
+          "items": [
+            {
+              "id": "sept-cuvee-du-soleil",
+              "name": "Sept Cuvée du Soleil",
+              "price": 44,
+              "glass": 8
+            },
+            {
+              "id": "b-qa-red",
+              "name": "B-QA Red",
+              "price": 49,
+              "glass": 10
+            },
+            {
+              "id": "ixsir-altitudes-red",
+              "name": "Ixsir Altitudes (red)",
+              "price": 45
+            },
+            {
+              "id": "ixsir-grande-reserve-red",
+              "name": "Ixsir Grande Réserve (red)",
+              "price": 52
+            },
+            {
+              "id": "chateau-marsyas-red",
+              "name": "Château Marsyas (red)",
+              "price": 76
+            },
+            {
+              "id": "bargylus-grand-vin-de-syrie-red",
+              "name": "Bargylus Grand Vin de Syrie (red)",
+              "price": 78
+            }
+          ]
+        },
+        {
+          "id": "local-rose",
+          "name": {
+            "en": "Lebanese rosé",
+            "ar": "روزيه لبناني",
+            "fr": "Rosés libanais"
+          },
+          "items": [
+            {
+              "id": "b-qa-rose",
+              "name": "B-QA Rosé",
+              "price": 48,
+              "glass": 9
+            },
+            {
+              "id": "ksara-sunset",
+              "name": "Ksara Sunset",
+              "price": 35
+            },
+            {
+              "id": "ixsir-grande-reserve-rose",
+              "name": "Ixsir Grande Réserve (rosé)",
+              "price": 46
+            }
+          ]
+        },
+        {
+          "id": "organic-lebanese",
+          "name": {
+            "en": "Organic Lebanese",
+            "ar": "لبناني عضوي",
+            "fr": "Bio libanais"
+          },
+          "items": [
+            {
+              "id": "mersel-nour-white",
+              "name": "Mersel Nour (white)",
+              "price": 48,
+              "glass": 10
+            },
+            {
+              "id": "mawj-nourvedre-red",
+              "name": "Mawj Nourvèdre (red)",
+              "price": 48,
+              "glass": 8
+            }
+          ]
+        },
+        {
+          "id": "champagne",
+          "name": {
+            "en": "Champagne",
+            "ar": "شمبانيا",
+            "fr": "Champagne"
+          },
+          "items": [
+            {
+              "id": "moet-chandon-brut",
+              "name": "Moët & Chandon Brut",
+              "price": 190
+            },
+            {
+              "id": "moet-chandon-rose",
+              "name": "Moët & Chandon Rosé",
+              "price": 280
+            },
+            {
+              "id": "moet-chandon-ice-imperial",
+              "name": "Moët & Chandon Ice Impérial",
+              "price": 240
+            },
+            {
+              "id": "moet-chandon-ice-rose",
+              "name": "Moët & Chandon Ice Rosé",
+              "price": 290
+            }
+          ]
+        },
+        {
+          "id": "prosecco",
+          "name": {
+            "en": "Prosecco",
+            "ar": "بروسيكو",
+            "fr": "Prosecco"
+          },
+          "items": [
+            {
+              "id": "astoria-tiemo-doc",
+              "name": "Astoria Tiemo DOC",
+              "price": 62,
+              "glass": 9
+            },
+            {
+              "id": "astoria-fashion-victim-rose",
+              "name": "Astoria Fashion Victim Rosé",
+              "price": 62,
+              "glass": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sake",
+      "name": {
+        "en": "Sake",
+        "ar": "ساكي",
+        "fr": "Saké"
+      },
+      "photo": "sake-shelf",
+      "groups": [
+        {
+          "id": "sake",
+          "name": {
+            "en": "Sake",
+            "ar": "ساكي",
+            "fr": "Saké"
+          },
+          "items": [
+            {
+              "id": "sho-chiku-bai-nigori-junmai-carafe",
+              "name": "Sho Chiku Bai Nigori Junmai (carafe)",
+              "price": 12
+            },
+            {
+              "id": "kicho-tokusen-300-ml",
+              "name": "Kicho Tokusen 300 ml",
+              "price": 35
+            },
+            {
+              "id": "sayuri-700-ml",
+              "name": "Sayuri 700 ml",
+              "price": 65
+            },
+            {
+              "id": "tentaka-junmai",
+              "name": "Tentaka Junmai",
+              "price": 68
+            },
+            {
+              "id": "nigori-unfiltered",
+              "name": "Nigori Unfiltered",
+              "price": 68
+            },
+            {
+              "id": "hideyoshi-junmai-daiginjo",
+              "name": "Hideyoshi Junmai Daiginjo",
+              "price": 135
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beer",
+      "name": {
+        "en": "Beer",
+        "ar": "بيرة",
+        "fr": "Bières"
+      },
+      "photo": null,
+      "groups": [
+        {
+          "id": "beer",
+          "name": {
+            "en": "Beer",
+            "ar": "بيرة",
+            "fr": "Bières"
+          },
+          "items": [
+            {
+              "id": "almaza",
+              "name": "Almaza",
+              "price": 5
+            },
+            {
+              "id": "almaza-light",
+              "name": "Almaza Light",
+              "price": 5
+            },
+            {
+              "id": "heineken",
+              "name": "Heineken",
+              "price": 8
+            },
+            {
+              "id": "noam",
+              "name": "Noam",
+              "price": 9
+            },
+            {
+              "id": "sapporo",
+              "name": "Sapporo",
+              "price": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spirits",
+      "name": {
+        "en": "Spirits",
+        "ar": "مشروبات روحية",
+        "fr": "Spiritueux"
+      },
+      "photo": null,
+      "priceLabels": true,
+      "groups": [
+        {
+          "id": "vodka",
+          "name": {
+            "en": "Vodka",
+            "ar": "فودكا",
+            "fr": "Vodka"
+          },
+          "items": [
+            {
+              "id": "ketel-one",
+              "name": "Ketel One",
+              "price": 144,
+              "glass": 12
+            },
+            {
+              "id": "belvedere",
+              "name": "Belvedere",
+              "price": 192,
+              "glass": 16
+            },
+            {
+              "id": "titos",
+              "name": "Tito's",
+              "price": 156,
+              "glass": 13
+            },
+            {
+              "id": "russian-standard-platinum",
+              "name": "Russian Standard Platinum",
+              "price": 108,
+              "glass": 9
+            },
+            {
+              "id": "suntory-haku",
+              "name": "Suntory Haku",
+              "price": 192,
+              "glass": 16
+            }
+          ]
+        },
+        {
+          "id": "gin",
+          "name": {
+            "en": "Gin",
+            "ar": "جن",
+            "fr": "Gin"
+          },
+          "items": [
+            {
+              "id": "tanqueray",
+              "name": "Tanqueray",
+              "price": 144,
+              "glass": 12
+            },
+            {
+              "id": "tanqueray-no-ten",
+              "name": "Tanqueray No. Ten",
+              "price": 168,
+              "glass": 14
+            },
+            {
+              "id": "hendricks",
+              "name": "Hendrick's",
+              "price": 180,
+              "glass": 15
+            },
+            {
+              "id": "roku",
+              "name": "Roku",
+              "price": 180,
+              "glass": 15
+            },
+            {
+              "id": "aviation",
+              "name": "Aviation",
+              "price": 168,
+              "glass": 14
+            },
+            {
+              "id": "monkey-47",
+              "name": "Monkey 47",
+              "price": 288,
+              "glass": 24
+            },
+            {
+              "id": "gin-mare",
+              "name": "Gin Mare",
+              "price": 216,
+              "glass": 18
+            },
+            {
+              "id": "sipsmith",
+              "name": "Sipsmith",
+              "price": 192,
+              "glass": 16
+            }
+          ]
+        },
+        {
+          "id": "tequila-mezcal",
+          "name": {
+            "en": "Tequila & mezcal",
+            "ar": "تيكيلا وميزكال",
+            "fr": "Tequila & mezcal"
+          },
+          "items": [
+            {
+              "id": "mijenta-silver",
+              "name": "Mijenta Silver",
+              "price": 156,
+              "glass": 13
+            },
+            {
+              "id": "mijenta-reposado",
+              "name": "Mijenta Reposado",
+              "price": 180,
+              "glass": 15
+            },
+            {
+              "id": "don-julio-blanco",
+              "name": "Don Julio Blanco",
+              "price": 228,
+              "glass": 19
+            },
+            {
+              "id": "don-julio-anejo",
+              "name": "Don Julio Añejo",
+              "price": 312,
+              "glass": 26
+            },
+            {
+              "id": "don-julio-reposado",
+              "name": "Don Julio Reposado",
+              "price": 264,
+              "glass": 22
+            },
+            {
+              "id": "don-julio-1942",
+              "name": "Don Julio 1942",
+              "price": 780,
+              "glass": 65
+            },
+            {
+              "id": "1800-anejo",
+              "name": "1800 Añejo",
+              "price": 216,
+              "glass": 18
+            },
+            {
+              "id": "1800-blanco",
+              "name": "1800 Blanco",
+              "price": 168,
+              "glass": 14
+            },
+            {
+              "id": "1800-reposado",
+              "name": "1800 Reposado",
+              "price": 192,
+              "glass": 16
+            },
+            {
+              "id": "alipus-mezcal",
+              "name": "Alipús Mezcal",
+              "price": 192,
+              "glass": 16
+            },
+            {
+              "id": "g4-blanco",
+              "name": "G4 Blanco",
+              "price": 216,
+              "glass": 18
+            },
+            {
+              "id": "g4-reposado",
+              "name": "G4 Reposado",
+              "price": 240,
+              "glass": 20
+            }
+          ]
+        },
+        {
+          "id": "blended-whisky",
+          "name": {
+            "en": "Blended whisky",
+            "ar": "ويسكي ممزوج",
+            "fr": "Whisky blend"
+          },
+          "items": [
+            {
+              "id": "johnnie-walker-gold-reserve",
+              "name": "Johnnie Walker Gold Reserve",
+              "price": 264,
+              "glass": 22
+            },
+            {
+              "id": "johnnie-walker-green-label",
+              "name": "Johnnie Walker Green Label",
+              "price": 216,
+              "glass": 18
+            },
+            {
+              "id": "johnnie-walker-black-label",
+              "name": "Johnnie Walker Black Label",
+              "price": 168,
+              "glass": 14
+            },
+            {
+              "id": "johnnie-walker-blue-label",
+              "name": "Johnnie Walker Blue Label",
+              "price": 744,
+              "glass": 62
+            },
+            {
+              "id": "j-b-reserve-15-yo",
+              "name": "J&B Reserve 15 YO",
+              "price": 180,
+              "glass": 15
+            },
+            {
+              "id": "old-parr-12-yo",
+              "name": "Old Parr 12 YO",
+              "price": 168,
+              "glass": 14
+            },
+            {
+              "id": "bulleit-bourbon",
+              "name": "Bulleit Bourbon",
+              "price": 168,
+              "glass": 14
+            },
+            {
+              "id": "bulleit-rye",
+              "name": "Bulleit Rye",
+              "price": 180,
+              "glass": 15
+            },
+            {
+              "id": "chivas-regal-18-yo",
+              "name": "Chivas Regal 18 YO",
+              "price": 336,
+              "glass": 28
+            },
+            {
+              "id": "chivas-regal-12-yo",
+              "name": "Chivas Regal 12 YO",
+              "price": 168,
+              "glass": 14
+            },
+            {
+              "id": "monkey-shoulder",
+              "name": "Monkey Shoulder",
+              "price": 180,
+              "glass": 15
+            },
+            {
+              "id": "jameson",
+              "name": "Jameson",
+              "price": 132,
+              "glass": 11
+            },
+            {
+              "id": "teeling-small-batch",
+              "name": "Teeling Small Batch",
+              "price": 180,
+              "glass": 15
+            }
+          ]
+        },
+        {
+          "id": "japanese-whisky",
+          "name": {
+            "en": "Japanese whisky",
+            "ar": "ويسكي ياباني",
+            "fr": "Whisky japonais"
+          },
+          "items": [
+            {
+              "id": "hibiki-japanese-harmony",
+              "name": "Hibiki Japanese Harmony",
+              "price": 396,
+              "glass": 33
+            },
+            {
+              "id": "nikka-days",
+              "name": "Nikka Days",
+              "price": 228,
+              "glass": 19
+            },
+            {
+              "id": "nikka-from-the-barrel",
+              "name": "Nikka From the Barrel",
+              "price": 276,
+              "glass": 23
+            }
+          ]
+        },
+        {
+          "id": "single-malt",
+          "name": {
+            "en": "Single malt",
+            "ar": "سينغل مولت",
+            "fr": "Single malt"
+          },
+          "items": [
+            {
+              "id": "singleton-12-yo",
+              "name": "Singleton 12 YO",
+              "price": 180,
+              "glass": 15
+            },
+            {
+              "id": "singleton-15-yo",
+              "name": "Singleton 15 YO",
+              "price": 264,
+              "glass": 22
+            },
+            {
+              "id": "glenfiddich-12-yo",
+              "name": "Glenfiddich 12 YO",
+              "price": 192,
+              "glass": 16
+            },
+            {
+              "id": "glenfiddich-15-yo",
+              "name": "Glenfiddich 15 YO",
+              "price": 264,
+              "glass": 22
+            },
+            {
+              "id": "glenfiddich-18-yo",
+              "name": "Glenfiddich 18 YO",
+              "price": 336,
+              "glass": 28
+            },
+            {
+              "id": "macallan-12-yo",
+              "name": "Macallan 12 YO",
+              "price": 324,
+              "glass": 27
+            },
+            {
+              "id": "macallan-15-yo",
+              "name": "Macallan 15 YO",
+              "price": 624,
+              "glass": 52
+            },
+            {
+              "id": "macallan-18-yo",
+              "name": "Macallan 18 YO",
+              "price": 1056,
+              "glass": 88
+            },
+            {
+              "id": "glenmorangie-x",
+              "name": "Glenmorangie X",
+              "price": 180,
+              "glass": 15
+            },
+            {
+              "id": "glenmorangie-original-10-yo",
+              "name": "Glenmorangie Original 10 YO",
+              "price": 192,
+              "glass": 16
+            },
+            {
+              "id": "lagavulin-8-yo",
+              "name": "Lagavulin 8 YO",
+              "price": 276,
+              "glass": 23
+            }
+          ]
+        },
+        {
+          "id": "cognac",
+          "name": {
+            "en": "Cognac",
+            "ar": "كونياك",
+            "fr": "Cognac"
+          },
+          "items": [
+            {
+              "id": "hennessy-vsop",
+              "name": "Hennessy VSOP",
+              "price": 264,
+              "glass": 22
+            },
+            {
+              "id": "hennessy-xo",
+              "name": "Hennessy XO",
+              "price": 540,
+              "glass": 45
+            }
+          ]
+        },
+        {
+          "id": "rum",
+          "name": {
+            "en": "Rum",
+            "ar": "روم",
+            "fr": "Rhum"
+          },
+          "items": [
+            {
+              "id": "captain-morgan-spiced-gold",
+              "name": "Captain Morgan Spiced Gold",
+              "price": 144,
+              "glass": 12
+            },
+            {
+              "id": "captain-morgan-black",
+              "name": "Captain Morgan Black",
+              "price": 144,
+              "glass": 12
+            },
+            {
+              "id": "captain-morgan-white",
+              "name": "Captain Morgan White",
+              "price": 132,
+              "glass": 11
+            },
+            {
+              "id": "ron-zacapa-23",
+              "name": "Ron Zacapa 23",
+              "price": 264,
+              "glass": 22
+            }
+          ]
+        },
+        {
+          "id": "liqueurs-vermouth",
+          "name": {
+            "en": "Liqueurs & vermouth",
+            "ar": "ليكيور وفيرموث",
+            "fr": "Liqueurs & vermouths"
+          },
+          "items": [
+            {
+              "id": "aperol",
+              "name": "Aperol",
+              "price": 144,
+              "glass": 12
+            },
+            {
+              "id": "campari",
+              "name": "Campari",
+              "price": 144,
+              "glass": 12
+            },
+            {
+              "id": "baileys",
+              "name": "Baileys",
+              "price": 108,
+              "glass": 9
+            },
+            {
+              "id": "kahlua",
+              "name": "Kahlúa",
+              "price": 108,
+              "glass": 9
+            },
+            {
+              "id": "skinos",
+              "name": "Skinos",
+              "price": 168,
+              "glass": 14
+            },
+            {
+              "id": "st-germain-elderflower",
+              "name": "St-Germain Elderflower",
+              "price": 156,
+              "glass": 13
+            },
+            {
+              "id": "jagermeister",
+              "name": "Jägermeister",
+              "price": 168,
+              "glass": 14
+            },
+            {
+              "id": "cointreau",
+              "name": "Cointreau",
+              "price": 156,
+              "glass": 13
+            },
+            {
+              "id": "disaronno-amaretto",
+              "name": "Disaronno Amaretto",
+              "price": 180,
+              "glass": 15
+            },
+            {
+              "id": "pernod-pastis",
+              "name": "Pernod Pastis",
+              "price": 144,
+              "glass": 12
+            },
+            {
+              "id": "fernet-branca",
+              "name": "Fernet-Branca",
+              "price": 180,
+              "glass": 15
+            },
+            {
+              "id": "martini-rosato",
+              "name": "Martini Rosato",
+              "price": 144,
+              "glass": 12
+            },
+            {
+              "id": "martini-bianco",
+              "name": "Martini Bianco",
+              "price": 144,
+              "glass": 12
+            },
+            {
+              "id": "martini-extra-dry",
+              "name": "Martini Extra Dry",
+              "price": 144,
+              "glass": 12
+            },
+            {
+              "id": "martini-rosso",
+              "name": "Martini Rosso",
+              "price": 144,
+              "glass": 12
+            },
+            {
+              "id": "monin-triple-sec",
+              "name": "Monin Triple Sec",
+              "price": 132,
+              "glass": 11
+            },
+            {
+              "id": "limoncello-bottega",
+              "name": "Limoncello Bottega",
+              "price": 144,
+              "glass": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soft",
+      "name": {
+        "en": "Soft drinks & coffee",
+        "ar": "مشروبات غازية وقهوة",
+        "fr": "Softs & café"
+      },
+      "photo": null,
+      "groups": [
+        {
+          "id": "house-iced-tea",
+          "name": {
+            "en": "House iced tea",
+            "ar": "شاي مثلّج من البيت",
+            "fr": "Thé glacé maison"
+          },
+          "items": [
+            {
+              "id": "lemongrass-ginger",
+              "name": "Lemongrass & Ginger",
+              "price": 5.5,
+              "desc": {
+                "en": "Lemongrass, ginger, green tea and honey",
+                "ar": "عشبة الليمون، زنجبيل، شاي أخضر وعسل",
+                "fr": "Citronnelle, gingembre, thé vert et miel"
+              }
+            },
+            {
+              "id": "mixed-berries",
+              "name": "Mixed Berries",
+              "price": 5.5
+            }
+          ]
+        },
+        {
+          "id": "soft-drinks",
+          "name": {
+            "en": "Soft drinks & water",
+            "ar": "مشروبات غازية ومي",
+            "fr": "Softs & eaux"
+          },
+          "items": [
+            {
+              "id": "sohat-small",
+              "name": "Sohat (small)",
+              "price": 3.5
+            },
+            {
+              "id": "sohat-large",
+              "name": "Sohat (large)",
+              "price": 6
+            },
+            {
+              "id": "perrier",
+              "name": "Perrier",
+              "price": 4
+            },
+            {
+              "id": "san-pellegrino-large",
+              "name": "San Pellegrino (large)",
+              "price": 8
+            },
+            {
+              "id": "lemonade",
+              "name": "Lemonade",
+              "price": 7
+            },
+            {
+              "id": "pepsi",
+              "name": "Pepsi",
+              "price": 4
+            },
+            {
+              "id": "diet-pepsi",
+              "name": "Diet Pepsi",
+              "price": 4
+            },
+            {
+              "id": "7up",
+              "name": "7UP",
+              "price": 4
+            },
+            {
+              "id": "diet-7up",
+              "name": "Diet 7UP",
+              "price": 4
+            },
+            {
+              "id": "3-cents-tonic-water",
+              "name": "3 Cents Tonic Water",
+              "price": 4
+            },
+            {
+              "id": "3-cents-soda-water",
+              "name": "3 Cents Soda Water",
+              "price": 4
+            }
+          ]
+        },
+        {
+          "id": "coffee",
+          "name": {
+            "en": "Coffee & tea",
+            "ar": "قهوة وشاي",
+            "fr": "Café & thé"
+          },
+          "items": [
+            {
+              "id": "espresso",
+              "name": "Espresso",
+              "price": 3
+            },
+            {
+              "id": "cappuccino",
+              "name": "Cappuccino",
+              "price": 6
+            },
+            {
+              "id": "tea",
+              "name": "Tea",
+              "price": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
