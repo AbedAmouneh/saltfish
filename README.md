@@ -54,6 +54,9 @@ Original photos are in `research/instagram/photos` (downloaded from @saltfish.lb
 2. Run `npm run images` (creates AVIF, WebP and JPEG at 480/960/1600 px in `public/images` and updates `app/content/images.json`).
 3. Reference the slug from any content file, e.g. `"photo": "lobster-roll"`.
 
+Browsers keep photos for 30 days (set in `vercel.json`). To change a photo that is already live, give it a new slug
+instead of overwriting the old files, so visitors see the new one right away.
+
 ### Share images
 
 `public/og/<page>-<lang>.jpg` are the 1200×630 previews used when a page is shared on WhatsApp, Instagram or Facebook.
