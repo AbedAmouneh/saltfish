@@ -64,7 +64,7 @@ export default function EventsPage() {
               const venue = e.branch === "both" ? t.events.both : getBranch(e.branch).name;
               return (
                 <li key={e.id} className="grid overflow-hidden rounded-3xl border border-amber/40 bg-coal md:grid-cols-[18rem_1fr]">
-                  <Photo slug={e.photo} sizes="(min-width: 768px) 18rem, 100vw" decorative imgClassName="h-56 w-full object-cover md:h-full" />
+                  <Photo slug={e.photo} sizes="(min-width: 768px) 18rem, 90vw" decorative imgClassName="h-56 w-full object-cover md:h-full" />
                   <div className="grid content-center gap-3 p-6 md:p-8">
                     <p className="eyebrow flex flex-wrap items-center gap-x-2 gap-y-1">
                       <span>
@@ -97,7 +97,7 @@ export default function EventsPage() {
             <li key={r.id} className="group grid overflow-hidden rounded-3xl border border-line bg-coal">
               <Photo
                 slug={r.photo}
-                sizes="(min-width: 768px) 50vw, 100vw"
+                sizes="(min-width: 1440px) 620px, (min-width: 768px) 46vw, 90vw"
                 decorative
                 imgClassName="aspect-[16/9] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
               />

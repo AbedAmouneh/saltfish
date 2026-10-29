@@ -419,7 +419,7 @@ export default function BookPage() {
               ))}
             </ol>
           </div>
-          <Photo slug="handrolls-tile-counter" sizes="(min-width: 1024px) 30vw, 100vw" decorative imgClassName="aspect-[4/3] w-full rounded-3xl object-cover" />
+          <Photo slug="handrolls-tile-counter" sizes="(min-width: 1440px) 510px, (min-width: 1024px) 37vw, 90vw" decorative imgClassName="aspect-[4/3] w-full rounded-3xl object-cover" />
         </aside>
       </div>
     </>

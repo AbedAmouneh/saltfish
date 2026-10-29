@@ -86,7 +86,7 @@ export function DishCard({ item, href }: { item: MenuItemT; href: string }) {
       <div className="relative overflow-hidden rounded-2xl bg-coal">
         <Photo
           slug={item.photo}
-          sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 80vw"
+          sizes="(min-width: 1440px) 410px, (min-width: 768px) 30vw, 42vw"
           imgClassName="aspect-[4/5] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
         />
         <span className="absolute end-3 top-3 rounded-full bg-night/85 px-3 py-1 text-sm font-bold text-amber tabular-nums backdrop-blur" dir="ltr">
@@ -128,7 +128,7 @@ export function BranchCard({ branch }: { branch: Branch }) {
     <article className="group relative isolate grid min-h-[28rem] overflow-hidden rounded-3xl border border-line">
       <Photo
         slug={branch.photo}
-        sizes="(min-width: 768px) 50vw, 100vw"
+        sizes="(min-width: 1440px) 620px, (min-width: 768px) 46vw, 90vw"
         decorative
         className="absolute inset-0 -z-20"
         imgClassName="size-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"

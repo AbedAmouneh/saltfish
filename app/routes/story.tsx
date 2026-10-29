@@ -32,7 +32,7 @@ export default function StoryPage() {
 
       <section className="gutter container-x grid gap-12 md:grid-cols-[1.2fr_1fr] md:items-center">
         <p className="text-[clamp(1.35rem,2.6vw,2rem)] leading-snug font-medium text-cream">{t.story.intro}</p>
-        <Photo slug="zaatar-tiradito" sizes="(min-width: 768px) 40vw, 100vw" imgClassName="aspect-[4/5] w-full rounded-3xl object-cover" />
+        <Photo slug="zaatar-tiradito" sizes="(min-width: 1440px) 555px, (min-width: 768px) 41vw, 90vw" imgClassName="aspect-[4/5] w-full rounded-3xl object-cover" />
       </section>
 
       {/* Timeline */}
@@ -58,7 +58,7 @@ export default function StoryPage() {
       <section className="relative isolate overflow-hidden">
         <div className="tile-pattern absolute inset-0 -z-10" aria-hidden="true" />
         <div className="gutter container-x grid items-center gap-10 py-20 md:grid-cols-2">
-          <Photo slug="sake-handroll" sizes="(min-width: 768px) 45vw, 100vw" imgClassName="aspect-[4/5] w-full rounded-3xl object-cover shadow-2xl" />
+          <Photo slug="sake-handroll" sizes="(min-width: 1440px) 615px, (min-width: 768px) 45vw, 90vw" imgClassName="aspect-[4/5] w-full rounded-3xl object-cover shadow-2xl" />
           <div className="grid gap-5">
             <h2 className="display text-[clamp(2.6rem,6vw,4.75rem)]">{t.story.counterTitle}</h2>
             <p className="max-w-[48ch] text-lg text-[#ffe7d6]">{t.story.counterBody}</p>
@@ -96,8 +96,8 @@ export default function StoryPage() {
           </a>
         </div>
         <div className="grid grid-cols-2 gap-3">
-          <Photo slug="the-crew" sizes="(min-width: 768px) 28vw, 50vw" imgClassName="aspect-[4/5] w-full rounded-2xl object-cover" />
-          <Photo slug="kitchen-motion" sizes="(min-width: 768px) 28vw, 50vw" imgClassName="aspect-[4/5] w-full rounded-2xl object-cover mt-10" />
+          <Photo slug="the-crew" sizes="(min-width: 1440px) 340px, (min-width: 768px) 25vw, 45vw" imgClassName="aspect-[4/5] w-full rounded-2xl object-cover" />
+          <Photo slug="kitchen-motion" sizes="(min-width: 1440px) 340px, (min-width: 768px) 25vw, 45vw" imgClassName="aspect-[4/5] w-full rounded-2xl object-cover mt-10" />
         </div>
       </section>
 

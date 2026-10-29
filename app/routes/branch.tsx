@@ -146,7 +146,7 @@ export default function BranchPage() {
         <ul className="grid grid-cols-2 gap-3 md:grid-cols-4">
           {b.gallery.map((slug) => (
             <li key={slug}>
-              <Photo slug={slug} sizes="(min-width: 768px) 25vw, 50vw" imgClassName="aspect-[4/5] w-full rounded-2xl object-cover" />
+              <Photo slug={slug} sizes="(min-width: 1440px) 310px, (min-width: 768px) 23vw, 45vw" imgClassName="aspect-[4/5] w-full rounded-2xl object-cover" />
             </li>
           ))}
         </ul>

@@ -118,12 +118,12 @@ export default function Home() {
           <div className="relative order-1 md:order-2">
             <Photo
               slug="handrolls-tile-counter"
-              sizes="(min-width: 768px) 45vw, 90vw"
+              sizes="(min-width: 1440px) 615px, (min-width: 768px) 45vw, 90vw"
               imgClassName="aspect-[4/5] w-full rounded-3xl object-cover shadow-[0_30px_60px_-20px_rgba(0,0,0,.6)]"
             />
             <Photo
               slug="handroll-slate"
-              sizes="(min-width: 768px) 18vw, 40vw"
+              sizes="(min-width: 1440px) 285px, 21vw"
               className="absolute -bottom-8 -start-6 hidden w-[42%] md:block"
               imgClassName="aspect-square w-full -rotate-6 rounded-2xl border-4 border-cream object-cover shadow-2xl"
             />
@@ -170,7 +170,7 @@ export default function Home() {
 
       {/* STORY */}
       <section className="gutter container-x grid items-center gap-12 py-24 md:grid-cols-[1fr_1.1fr] md:py-32" aria-labelledby="story">
-        <Photo slug="the-crew-counter" sizes="(min-width: 768px) 45vw, 100vw" imgClassName="aspect-[4/5] w-full rounded-3xl object-cover" />
+        <Photo slug="the-crew-counter" sizes="(min-width: 1440px) 580px, (min-width: 768px) 43vw, 90vw" imgClassName="aspect-[4/5] w-full rounded-3xl object-cover" />
         <div className="grid gap-6">
           <p className="eyebrow">{t.home.story.eyebrow}</p>
           <h2 id="story" className="display text-[clamp(3rem,7vw,6rem)]">
@@ -199,7 +199,7 @@ export default function Home() {
               <a href={site.instagram} target="_blank" rel="noopener" className="block overflow-hidden rounded-xl">
                 <Photo
                   slug={slug}
-                  sizes="(min-width: 768px) 16vw, 33vw"
+                  sizes="(min-width: 1440px) 205px, (min-width: 768px) 15vw, 30vw"
                   imgClassName="aspect-square w-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </a>

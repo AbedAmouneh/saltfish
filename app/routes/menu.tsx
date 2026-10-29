@@ -117,7 +117,7 @@ function MenuRow({ item }: { item: MenuItem }) {
     <li id={item.id} className="grid scroll-mt-40 grid-cols-[minmax(0,1fr)_auto] gap-x-4 gap-y-1.5 border-b border-line/70 py-5 md:scroll-mt-48">
       <div className="flex min-w-0 gap-4">
         {item.photo ? (
-          <Photo slug={item.photo} sizes="88px" className="shrink-0" imgClassName="size-[4.5rem] rounded-xl object-cover md:size-[5.5rem]" />
+          <Photo slug={item.photo} sizes="(min-width: 768px) 88px, 72px" className="shrink-0" imgClassName="size-[4.5rem] rounded-xl object-cover md:size-[5.5rem]" />
         ) : null}
         <div className="grid min-w-0 content-start gap-1.5">
           <h3 className="text-[1.05rem] leading-snug font-bold" lang="en">

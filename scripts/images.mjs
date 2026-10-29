@@ -1,6 +1,7 @@
 // Turns the Instagram originals into responsive web images.
 // Usage: npm run images
 // Reads scripts/photo-sources.json, writes public/images/<slug>-<w>.{avif,webp,jpg}
+// (240 px for thumbnails up to 1600 px for full-width heroes)
 // and app/content/images.json (the manifest the <Photo> component uses).
 import { mkdir, readFile, writeFile, access } from "node:fs/promises";
 import path from "node:path";
@@ -10,7 +11,7 @@ const root = path.resolve(import.meta.dirname, "..");
 const srcDir = path.join(root, "research/instagram/photos");
 const outDir = path.join(root, "public/images");
 const manifestPath = path.join(root, "app/content/images.json");
-const WIDTHS = [480, 960, 1600];
+const WIDTHS = [240, 480, 960, 1600];
 
 const sources = JSON.parse(await readFile(path.join(root, "scripts/photo-sources.json"), "utf8"));
 await mkdir(outDir, { recursive: true });
