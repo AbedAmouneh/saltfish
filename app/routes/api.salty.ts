@@ -27,28 +27,42 @@ const Body = z
   .refine((b) => !b.table || (!!b.branch && b.table <= getBranch(b.branch).tables), "table");
 
 /**
- * Salty's brain, picked from whichever key is set:
- *   ANTHROPIC_API_KEY                  → Claude (default model claude-haiku-5-5)
- *   GEMINI_API_KEY                     → Google Gemini, free tier available (tries gemini-3.5-flash-lite, then 3.6 Flash, then 3.8 Flash)
- *   AI_API_KEY + AI_BASE_URL + SALTY_MODEL → any OpenAI-compatible service (Groq, OpenRouter, …)
- * None set → demo replies.
+ * Salty's brain: every service whose key is set, tried in this order until one answers.
+ *   GEMINI_API_KEY   → Google Gemini, free tier (models in GEMINI_MODELS, default 3.5 Flash-Lite, 3.6 Flash, 3.8 Flash)
+ *   GROQ_API_KEY     → Groq, free tier (models in GROQ_MODELS, default gpt-oss-120b, then gpt-oss-20b)
+ *   ANTHROPIC_API_KEY → Claude (SALTY_CLAUDE_MODEL, default claude-haiku-5-5)
+ *   AI_API_KEY + AI_BASE_URL + SALTY_MODEL → any other OpenAI-compatible service
+ * A busy, stalled, rate-limited or rejected model falls through to the next one. None set → demo replies.
+ * Gemini comes before Claude so an ANTHROPIC_API_KEY exported by a shell profile can't take over locally.
  */
 const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai";
-type Provider = { kind: "anthropic"; apiKey: string; model: string } | { kind: "openai-compatible"; apiKey: string; baseUrl: string; model: string };
+const GROQ_BASE_URL = "https://api.groq.com/openai/v1";
+type Attempt =
+  | { kind: "anthropic"; label: string; apiKey: string; model: string }
+  | { kind: "openai-compatible"; label: string; apiKey: string; baseUrl: string; model: string; extra?: Record<string, unknown> };
 
-function pickProvider(): Provider | null {
+const list = (v: string | undefined, fallback: string) =>
+  (v || fallback)
+    .split(",")
+    .map((m) => m.trim())
+    .filter(Boolean);
+
+function attempts(): Attempt[] {
   const env = process.env;
-  if (env.ANTHROPIC_API_KEY) return { kind: "anthropic", apiKey: env.ANTHROPIC_API_KEY, model: env.SALTY_MODEL || "claude-haiku-5-5" };
+  const out: Attempt[] = [];
   if (env.GEMINI_API_KEY)
-    return {
-      kind: "openai-compatible",
-      apiKey: env.GEMINI_API_KEY,
-      baseUrl: GEMINI_BASE_URL,
-      model: env.SALTY_MODEL || "gemini-3.5-flash-lite,gemini-3.6-flash,gemini-3.8-flash",
-    };
+    for (const model of list(env.GEMINI_MODELS, "gemini-3.5-flash-lite,gemini-3.6-flash,gemini-3.8-flash"))
+      // Gemini's newer models think before answering by default; Salty's answers come from the knowledge pack, so keep it light.
+      out.push({ kind: "openai-compatible", label: "gemini", apiKey: env.GEMINI_API_KEY, baseUrl: GEMINI_BASE_URL, model, extra: { reasoning_effort: "low" } });
+  if (env.GROQ_API_KEY)
+    for (const model of list(env.GROQ_MODELS, "openai/gpt-oss-120b,openai/gpt-oss-20b"))
+      out.push({ kind: "openai-compatible", label: "groq", apiKey: env.GROQ_API_KEY, baseUrl: GROQ_BASE_URL, model, extra: { reasoning_effort: "low" } });
+  if (env.ANTHROPIC_API_KEY)
+    out.push({ kind: "anthropic", label: "claude", apiKey: env.ANTHROPIC_API_KEY, model: env.SALTY_CLAUDE_MODEL || "claude-haiku-5-5" });
   if (env.AI_API_KEY && env.AI_BASE_URL && env.SALTY_MODEL)
-    return { kind: "openai-compatible", apiKey: env.AI_API_KEY, baseUrl: env.AI_BASE_URL.replace(/\/+$/, ""), model: env.SALTY_MODEL };
-  return null;
+    for (const model of list(env.SALTY_MODEL, ""))
+      out.push({ kind: "openai-compatible", label: "custom", apiKey: env.AI_API_KEY, baseUrl: env.AI_BASE_URL.replace(/\/+$/, ""), model });
+  return out;
 }
 /** Per table (or per phone off-site), per connection, and for the whole site per day. */
 const MESSAGES_PER_10_MIN = 20;
@@ -88,17 +102,17 @@ export async function action({ request }: ActionFunctionArgs) {
     return text("Salty is unavailable", 503);
   }
 
-  const provider = pickProvider();
-  if (!provider) return demoStream(body.messages.at(-1)!.content);
+  const chain = attempts();
+  if (!chain.length) return demoStream(body.messages.at(-1)!.content);
 
   // Open the stream before answering, so a bad key, an outage or a used-up quota becomes a clean 503
   // the chat can show, instead of an unhandled error halfway through the response.
   let chunks: AsyncIterable<string>;
   let abort: () => void;
   try {
-    ({ chunks, abort } = provider.kind === "anthropic" ? await claudeStream(provider, body) : await openAiCompatibleStream(provider, body));
+    ({ chunks, abort } = await firstToAnswer(chain, body));
   } catch (e) {
-    logError(`salty request failed (${provider.kind})`, e);
+    logError("salty request failed", e);
     return text("Salty is unavailable", 503);
   }
 
@@ -123,20 +137,56 @@ export async function action({ request }: ActionFunctionArgs) {
 type Streamed = { chunks: AsyncIterable<string>; abort: () => void };
 type Body = z.infer<typeof Body>;
 
-async function claudeStream(p: Extract<Provider, { kind: "anthropic" }>, body: Body): Promise<Streamed> {
-  const client = new Anthropic({ apiKey: p.apiKey });
-  const stream = await client.messages.create({
-    stream: true,
-    model: p.model,
-    max_tokens: 500,
-    system: [
-      { type: "text", text: SALTY_RULES },
-      // The knowledge pack is identical for every guest, so it is cached.
-      { type: "text", text: `KNOWLEDGE\n${knowledgePack()}`, cache_control: { type: "ephemeral" } },
-      { type: "text", text: contextNote(body) },
-    ],
-    messages: body.messages,
-  });
+const TOTAL_MS = 55_000; // stay well inside the serverless function limit
+const PER_MODEL_MS = 12_000; // an overloaded model sometimes never starts answering
+
+/** Tries each model in turn and returns the first stream that starts. Throws with every failure if none does. */
+async function firstToAnswer(chain: Attempt[], body: Body): Promise<Streamed> {
+  const startedAt = Date.now();
+  const failures: string[] = [];
+  const deadKeys = new Set<string>();
+  for (const a of chain) {
+    if (deadKeys.has(a.apiKey)) continue;
+    const left = TOTAL_MS - (Date.now() - startedAt);
+    if (left < 2_000) {
+      failures.push("out of time");
+      break;
+    }
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(new Error(`no answer within ${Math.round(Math.min(PER_MODEL_MS, left) / 1000)}s`)), Math.min(PER_MODEL_MS, left));
+    try {
+      const streamed = a.kind === "anthropic" ? await claudeStream(a, body, ctl) : await openAiCompatibleStream(a, body, ctl);
+      console.log(`salty: ${a.label} ${a.model} answered in ${Date.now() - startedAt}ms${failures.length ? ` (after ${failures.join("; ")})` : ""}`);
+      return streamed;
+    } catch (e) {
+      const status = (e as { status?: number }).status;
+      failures.push(`${a.label} ${a.model}: ${e instanceof Error ? e.message : String(e)}`.slice(0, 240));
+      // A rejected key fails the same way for every model on it.
+      if (status === 401 || status === 403) deadKeys.add(a.apiKey);
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+  throw new Error(`no model answered after ${Date.now() - startedAt}ms: ${failures.join(" | ")}`);
+}
+
+async function claudeStream(a: Extract<Attempt, { kind: "anthropic" }>, body: Body, ctl: AbortController): Promise<Streamed> {
+  const client = new Anthropic({ apiKey: a.apiKey, maxRetries: 0 });
+  const stream = await client.messages.create(
+    {
+      stream: true,
+      model: a.model,
+      max_tokens: 500,
+      system: [
+        { type: "text", text: SALTY_RULES },
+        // The knowledge pack is identical for every guest, so it is cached.
+        { type: "text", text: `KNOWLEDGE\n${knowledgePack()}`, cache_control: { type: "ephemeral" } },
+        { type: "text", text: contextNote(body) },
+      ],
+      messages: body.messages,
+    },
+    { signal: ctl.signal },
+  );
   return {
     chunks: (async function* () {
       for await (const event of stream) {
@@ -147,62 +197,28 @@ async function claudeStream(p: Extract<Provider, { kind: "anthropic" }>, body: B
   };
 }
 
-/** Gemini (and other OpenAI-compatible services): chat completions streamed as server-sent events. */
-async function openAiCompatibleStream(p: Extract<Provider, { kind: "openai-compatible" }>, body: Body): Promise<Streamed> {
-  const controller = new AbortController();
-  const startedAt = Date.now();
-  const timeout = setTimeout(() => controller.abort(new Error(`no answer from ${p.baseUrl} within 55s`)), 55_000);
-  const messages = [{ role: "system", content: `${SALTY_RULES}\n\nKNOWLEDGE\n${knowledgePack()}\n\n${contextNote(body)}` }, ...body.messages];
-  // SALTY_MODEL can list several models: when one is overloaded or out of free quota, try the next.
-  const models = p.model
-    .split(",")
-    .map((m) => m.trim())
-    .filter(Boolean);
-  const failures: string[] = [];
-  let res: Response | undefined;
-  try {
-    for (const model of models) {
-      // Each model gets 15s to start answering; an overloaded one sometimes never does.
-      const attemptCtl = new AbortController();
-      const attemptTimer = setTimeout(() => attemptCtl.abort(new Error("no answer within 15s")), 15_000);
-      let attempt: Response;
-      try {
-        attempt = await fetch(`${p.baseUrl}/chat/completions`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json", Authorization: `Bearer ${p.apiKey}` },
-          body: JSON.stringify({
-            model,
-            stream: true,
-            max_tokens: 800,
-            // Gemini's newer models think before answering by default, which delays the first word. Salty's
-            // answers come from the knowledge pack, so light thinking is enough. Other services may not accept it.
-            ...(p.baseUrl === GEMINI_BASE_URL ? { reasoning_effort: "low" } : {}),
-            messages,
-          }),
-          signal: AbortSignal.any([controller.signal, attemptCtl.signal]),
-        });
-      } catch (e) {
-        if (controller.signal.aborted || !attemptCtl.signal.aborted) throw e;
-        failures.push(`${model}: no answer within 15s`);
-        continue;
-      } finally {
-        clearTimeout(attemptTimer);
-      }
-      if (attempt.ok && attempt.body) {
-        console.log(`salty: ${model} answered in ${Date.now() - startedAt}ms${failures.length ? ` (after ${failures.join("; ")})` : ""}`);
-        res = attempt;
-        break;
-      }
-      failures.push(`${model} ${attempt.status}: ${(await attempt.text().catch(() => "")).replace(/\s+/g, " ").slice(0, 200)}`);
-      // A rejected key fails the same way for every model.
-      if (attempt.status === 401 || attempt.status === 403) break;
-    }
-  } finally {
-    clearTimeout(timeout);
+/** Gemini, Groq and other OpenAI-compatible services: chat completions streamed as server-sent events. */
+async function openAiCompatibleStream(a: Extract<Attempt, { kind: "openai-compatible" }>, body: Body, ctl: AbortController): Promise<Streamed> {
+  const res = await fetch(`${a.baseUrl}/chat/completions`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${a.apiKey}` },
+    body: JSON.stringify({
+      model: a.model,
+      stream: true,
+      max_tokens: 800,
+      ...a.extra,
+      messages: [{ role: "system", content: `${SALTY_RULES}\n\nKNOWLEDGE\n${knowledgePack()}\n\n${contextNote(body)}` }, ...body.messages],
+    }),
+    signal: ctl.signal,
+  });
+  if (!res.ok || !res.body) {
+    const detail = (await res.text().catch(() => "")).replace(/\s+/g, " ").slice(0, 160);
+    throw Object.assign(new Error(`${res.status} ${detail}`), { status: res.status });
   }
-  if (!res?.body) throw new Error(`${p.baseUrl} failed after ${Date.now() - startedAt}ms: ${failures.join(" | ")}`);
+  // The answer has started: from here only the guest closing the chat stops it.
   const reader = res.body.pipeThrough(new TextDecoderStream()).getReader();
-
+  const stream = new AbortController();
+  stream.signal.addEventListener("abort", () => ctl.abort());
   return {
     chunks: (async function* () {
       let buffer = "";
@@ -217,6 +233,7 @@ async function openAiCompatibleStream(p: Extract<Provider, { kind: "openai-compa
           if (!data.startsWith("data:")) continue;
           const payload = data.slice(5).trim();
           if (payload === "[DONE]") return;
+          // Only the answer: reasoning models stream their thinking in a separate field, which guests never see.
           const delta = JSON.parse(payload)?.choices?.[0]?.delta?.content;
           if (typeof delta === "string" && delta) yield delta;
         }
@@ -224,7 +241,7 @@ async function openAiCompatibleStream(p: Extract<Provider, { kind: "openai-compa
     })(),
     abort: () => {
       reader.cancel().catch(() => {});
-      controller.abort();
+      stream.abort();
     },
   };
 }
@@ -235,7 +252,7 @@ export function loader() {
 
 /** Local development without an API key: a short scripted reply, streamed like the real thing. */
 function demoStream(question: string) {
-  const reply = `(Demo mode: add GEMINI_API_KEY or ANTHROPIC_API_KEY to talk to the real Salty.) You asked: "${question.slice(0, 120)}". Try the Zaatar White Fish Tiradito ($24) and a Salmon Handroll ($11), or [book a counter seat](/book?seating=counter). 🐟`;
+  const reply = `(Demo mode: add GEMINI_API_KEY, GROQ_API_KEY or ANTHROPIC_API_KEY to talk to the real Salty.) You asked: "${question.slice(0, 120)}". Try the Zaatar White Fish Tiradito ($24) and a Salmon Handroll ($11), or [book a counter seat](/book?seating=counter). 🐟`;
   const encoder = new TextEncoder();
   const words = reply.split(/(?<= )/);
   return new Response(

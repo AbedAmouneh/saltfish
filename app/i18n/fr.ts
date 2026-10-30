@@ -37,6 +37,7 @@ const fr = {
       explore: "Explorer",
       rights: "Tous droits réservés.",
       photos: "Photos : @saltfish.lb",
+      madeBy: "Conçu et développé par",
     },
   },
   days: {
@@ -211,7 +212,7 @@ const fr = {
       "Réservez une table chez Saltfish à Naccache (Zero 4) ou à Faqra. Choisissez le comptoir, la salle ou la terrasse et envoyez votre demande sur WhatsApp.",
     eyebrow: "Réservations",
     title: "Réserver une table",
-    sub: "Remplissez ce formulaire : WhatsApp s'ouvrira avec votre demande prête à envoyer. L'équipe confirmera votre table dans la conversation.",
+    sub: "Remplissez ce formulaire, puis envoyez votre demande sur WhatsApp en un clic. L'équipe confirmera votre table dans la conversation.",
     branch: "Adresse",
     date: "Date",
     time: "Heure",

@@ -50,7 +50,7 @@ export default function StaffFeedback() {
         <div className="grid gap-1 bg-coal p-6">
           <p className="text-xs font-semibold text-dusk">Average rating</p>
           <p className="display text-6xl text-amber tabular-nums">{rows.length ? avg.toFixed(1) : "–"}</p>
-          <p className="text-sm text-sand">{rows.length} responses</p>
+          <p className="text-sm text-sand">{rows.length} response{rows.length === 1 ? "" : "s"}</p>
         </div>
         <div className="grid content-start gap-2 bg-coal p-6">
           <p className="text-xs font-semibold text-dusk">Ratings</p>

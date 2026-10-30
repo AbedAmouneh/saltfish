@@ -37,6 +37,7 @@ const en = {
       explore: "Explore",
       rights: "All rights reserved.",
       photos: "Photos from @saltfish.lb",
+      madeBy: "Designed & developed by",
     },
   },
   days: {
@@ -206,7 +207,7 @@ const en = {
     metaDescription: "Book a table at Saltfish in Naccache (Zero 4) or Faqra. Choose the counter, indoors or the terrace and send your request on WhatsApp.",
     eyebrow: "Reservations",
     title: "Book a table",
-    sub: "Fill this in and we'll open WhatsApp with your request ready to send. The team will confirm your table there.",
+    sub: "Fill this in, then send your request on WhatsApp in one tap. The team will confirm your table there.",
     branch: "Branch",
     date: "Date",
     time: "Time",

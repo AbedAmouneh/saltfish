@@ -4,7 +4,7 @@ import { pick, useI18n } from "~/i18n";
 import { telHref } from "~/lib/contact";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { Arrow } from "./ui";
-import { Logo } from "./Logo";
+import { CollabLogo, VOXIRE_URL, VoxireWordmark } from "./Voxire";
 
 export function SiteFooter() {
   const { t, locale, href } = useI18n();
@@ -14,9 +14,7 @@ export function SiteFooter() {
       <div className="tile-pattern h-3" aria-hidden="true" />
       <div className="gutter container-x grid gap-12 py-16 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
         <div className="grid content-start gap-5">
-          <Link to={href("/")} className="justify-self-start text-4xl text-cream" aria-label="Saltfish">
-            <Logo />
-          </Link>
+          <CollabLogo homeHref={href("/")} className="max-w-full flex-wrap justify-self-start text-4xl text-cream" voxireClassName="h-[1.05em]" />
           <p className="max-w-xs text-sand">{t.common.footer.tagline}</p>
           <LanguageSwitch className="justify-self-start" />
         </div>
@@ -81,6 +79,13 @@ export function SiteFooter() {
           © {year} {site.name}. {t.common.footer.rights}
         </p>
         <p>{t.common.footer.photos}</p>
+      </div>
+      {/* Extra bottom room so the floating "Ask Salty" button never covers the credit */}
+      <div className="gutter container-x flex justify-center pt-2 pb-28 text-xs text-dusk md:pb-24">
+        <a href={VOXIRE_URL} target="_blank" rel="noopener" className="inline-flex items-center gap-2 py-2 hover:text-cream">
+          {t.common.footer.madeBy}
+          <VoxireWordmark className="h-6" />
+        </a>
       </div>
     </footer>
   );

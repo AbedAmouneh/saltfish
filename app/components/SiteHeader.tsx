@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import { useI18n } from "~/i18n";
 import { LanguageSwitch } from "./LanguageSwitch";
-import { Logo } from "./Logo";
+import { CollabLogo } from "./Voxire";
 
 export function SiteHeader() {
   const { t, href } = useI18n();
@@ -40,10 +40,8 @@ export function SiteHeader() {
         solid || open ? "bg-night/88 shadow-[0_1px_0_var(--color-line)] backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <div className="gutter container-x flex h-16 items-center gap-6 md:h-20">
-        <Link to={href("/")} className="text-[1.45rem] text-cream md:text-[1.7rem]" aria-label="Saltfish">
-          <Logo />
-        </Link>
+      <div className="gutter container-x flex h-16 items-center gap-4 md:h-20 xl:gap-6">
+        <CollabLogo homeHref={href("/")} className="shrink-0 text-[1.45rem] text-cream md:text-[1.7rem]" voxireClassName="h-[1.05em]" />
 
         <nav aria-label={t.common.nav.primary} className="ms-auto hidden lg:block">
           <ul className="flex items-center gap-1">
@@ -53,7 +51,7 @@ export function SiteHeader() {
                   to={it.to}
                   end={!(it.to.endsWith("/menu") || it.to.endsWith("/play"))}
                   className={({ isActive }) =>
-                    `rounded-full px-3.5 py-2 text-[0.95rem] font-semibold transition-colors ${isActive ? "text-amber" : "text-sand hover:text-cream"}`
+                    `rounded-full px-2 py-2 text-[0.95rem] font-semibold transition-colors xl:px-3.5 ${isActive ? "text-amber" : "text-sand hover:text-cream"}`
                   }
                 >
                   {it.label}

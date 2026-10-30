@@ -123,11 +123,13 @@ See `.env.example`. On Vercel, add them under Project → Settings → Environme
 - `DATABASE_URL`: add a Neon database from Vercel → Storage; tables are created automatically on first use
 - `SESSION_SECRET`: any long random string
 - `STAFF_PASSWORD` (managers), and optionally `STAFF_PASSWORD_NACCACHE` / `STAFF_PASSWORD_FAQRA`
-- Salty's AI, one of:
-  - `GEMINI_API_KEY`: free from Google AI Studio (aistudio.google.com, no card). The free tier has daily request limits
-    and Google may use free-tier prompts to improve its products, so move to a paid key or Claude for launch
-  - `ANTHROPIC_API_KEY`: from the Claude Console, with a monthly spend limit (used first when set)
-  - `AI_API_KEY` + `AI_BASE_URL` + `SALTY_MODEL`: any OpenAI-compatible service such as Groq or OpenRouter
+- Salty's AI: set one or more. Salty tries them in this order and moves on when a model is busy, stalled or out of quota:
+  - `GEMINI_API_KEY`: free from Google AI Studio (aistudio.google.com, no card). Google may use free-tier prompts to
+    improve its products, so move to a paid key or Claude for launch. `GEMINI_MODELS` changes the models tried
+  - `GROQ_API_KEY`: free from console.groq.com (no card). A good backup: its free limits allow only about one Salty
+    message a minute because of the long menu prompt. `GROQ_MODELS` changes the models tried
+  - `ANTHROPIC_API_KEY`: from the Claude Console, with a monthly spend limit (`SALTY_CLAUDE_MODEL` to change the model)
+  - `AI_API_KEY` + `AI_BASE_URL` + `SALTY_MODEL`: any other OpenAI-compatible service such as OpenRouter
 - `SALTY_DAILY_LIMIT` (optional, default 3000): Salty messages per day across the whole site, a cost guard
 
 Security headers (no framing, no sniffing, strict referrer, no camera/mic/location) are set in `vercel.json`.

@@ -42,7 +42,7 @@ function RichText({ text }: { text: string }) {
   const flush = (k: number) => {
     if (list.length)
       out.push(
-        <ul key={`ul-${k}`} className="my-1 grid list-disc gap-1 ps-5">
+        <ul key={`ul-${k}`} dir="auto" className="my-1 grid list-disc gap-1 ps-5">
           {list}
         </ul>,
       );
@@ -53,7 +53,13 @@ function RichText({ text }: { text: string }) {
     if (bullet) list.push(<li key={k}>{inline(bullet[1]!, `l${k}`)}</li>);
     else {
       flush(k);
-      if (l.trim()) out.push(<p key={k}>{inline(l, `p${k}`)}</p>);
+      // dir="auto": an English reply on an Arabic page (or the reverse) keeps its punctuation in place
+      if (l.trim())
+        out.push(
+          <p key={k} dir="auto">
+            {inline(l, `p${k}`)}
+          </p>,
+        );
     }
   });
   flush(lines.length);
@@ -166,7 +172,7 @@ export function SaltyChat({ branch, table, onClose, variant }: Props) {
         {messages.map((m, i) =>
           m.role === "user" ? (
             <div key={i} className="ms-auto max-w-[85%] rounded-2xl rounded-se-md bg-amber px-4 py-3 text-[0.95rem] text-night">
-              {m.content}
+              <p dir="auto">{m.content}</p>
             </div>
           ) : (
             <div key={i} className="max-w-[88%] rounded-2xl rounded-ss-md border border-line bg-coal px-4 py-3 text-[0.95rem] leading-relaxed">
@@ -220,6 +226,8 @@ export function SaltyChat({ branch, table, onClose, variant }: Props) {
               }
             }}
             placeholder={t.salty.placeholder}
+            // Follow what the guest types; while empty, keep the page direction so the placeholder reads right
+            dir={input ? "auto" : undefined}
             className="field max-h-32 min-h-11 resize-none !rounded-2xl"
           />
           <button type="submit" disabled={busy || !input.trim()} className="btn btn-primary !min-h-11 !px-4 disabled:opacity-50" aria-label={t.salty.send}>

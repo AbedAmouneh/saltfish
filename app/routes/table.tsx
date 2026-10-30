@@ -12,6 +12,7 @@ import {
   type MetaFunction,
 } from "react-router";
 import { Logo } from "~/components/Logo";
+import { VOXIRE_URL, VoxireWordmark } from "~/components/Voxire";
 import { Photo } from "~/components/Photo";
 import { usePicks } from "~/components/table/usePicks";
 import { Arrow, TagChip } from "~/components/ui";
@@ -172,6 +173,13 @@ export default function TableMode() {
         ) : null}
         {tab === "feedback" ? <FeedbackTab branchId={branchId} /> : null}
       </main>
+
+      <p className="gutter py-8 text-center text-xs text-dusk">
+        <a href={VOXIRE_URL} target="_blank" rel="noopener" className="inline-flex items-center gap-2">
+          {t.common.footer.madeBy}
+          <VoxireWordmark className="h-6" />
+        </a>
+      </p>
 
       <nav
         aria-label={t.common.nav.primary}
