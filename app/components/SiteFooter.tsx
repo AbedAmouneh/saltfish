@@ -2,7 +2,6 @@ import { Link } from "react-router";
 import { branches, site } from "~/content";
 import { pick, useI18n } from "~/i18n";
 import { telHref } from "~/lib/contact";
-import { LanguageSwitch } from "./LanguageSwitch";
 import { Arrow } from "./ui";
 import { CollabLogo, VOXIRE_URL, VoxireWordmark } from "./Voxire";
 
@@ -12,11 +11,11 @@ export function SiteFooter() {
   return (
     <footer className="relative mt-24 border-t border-line bg-coal">
       <div className="tile-pattern h-3" aria-hidden="true" />
-      <div className="gutter container-x grid gap-12 py-16 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
-        <div className="grid content-start gap-5">
-          <CollabLogo homeHref={href("/")} className="max-w-full flex-wrap justify-self-start text-4xl text-cream" voxireClassName="h-[1.05em]" />
+      <div className="gutter container-x grid gap-12 py-16 md:grid-cols-3 xl:grid-cols-[1.3fr_1fr_1fr_1fr]">
+        {/* Tablets and laptops: the brand block gets its own row so the Saltfish × Voxire lockup stays on one line */}
+        <div className="grid content-start gap-5 md:col-span-3 xl:col-span-1">
+          <CollabLogo homeHref={href("/")} className="max-w-full flex-wrap justify-self-start text-3xl text-cream xl:text-4xl" voxireClassName="h-[1.05em]" />
           <p className="max-w-xs text-sand">{t.common.footer.tagline}</p>
-          <LanguageSwitch className="justify-self-start" />
         </div>
 
         {branches.map((b) => (

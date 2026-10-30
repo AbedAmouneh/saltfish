@@ -22,8 +22,9 @@ export function CollabLogo({ homeHref, voxireClassName = "h-[1.1em]", className 
       ) : (
         <Logo />
       )}
-      {/* "×" and the wordmark stay together if the lockup wraps onto two lines */}
-      <span className="inline-flex shrink-0 items-center gap-[0.4em]">
+      {/* "×" and the wordmark stay together if the lockup wraps onto two lines, and sit on the
+          "SALT FISH" line (not centered on the whole logo, whose wave sits above the letters) */}
+      <span className="inline-flex h-[1em] shrink-0 items-center gap-[0.4em] self-end">
         <span aria-hidden="true" className="text-[0.6em] font-semibold opacity-60">
           ×
         </span>
