@@ -41,7 +41,8 @@ export function SiteHeader() {
       }`}
     >
       <div className="gutter container-x flex h-16 items-center gap-4 md:h-20 xl:gap-6">
-        <CollabLogo homeHref={href("/")} className="shrink-0 text-[1.45rem] text-cream md:text-[1.7rem]" voxireClassName="h-[1.05em]" />
+        {/* Raised so the SALT FISH letters line up with the nav, language switch and button (the wave sits above them) */}
+        <CollabLogo homeHref={href("/")} className="shrink-0 -translate-y-[0.534em] text-[1.45rem] text-cream md:text-[1.7rem]" voxireClassName="h-[1.05em]" />
 
         <nav aria-label={t.common.nav.primary} className="ms-auto hidden lg:block">
           <ul className="flex items-center gap-1">

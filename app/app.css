@@ -273,3 +273,94 @@
 input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(0.85);
 }
+
+/* Instagram strip: photos tilt towards the pointer, lift, catch a gleam and show an Instagram badge (components/InstaTile.tsx) */
+@layer components {
+  .insta-tile {
+    position: relative;
+    display: block;
+    transform: perspective(700px) rotate(var(--tilt, 0deg)) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(var(--lift, 0px)) scale(var(--zoom, 1));
+    transition:
+      transform 0.55s var(--ease-out-soft),
+      box-shadow 0.35s var(--ease-out-soft);
+  }
+  /* While the pointer moves, follow it closely instead of springing */
+  .insta-tile[data-tracking] {
+    transition:
+      transform 0.12s ease-out,
+      box-shadow 0.35s var(--ease-out-soft);
+  }
+  .insta-tile:hover,
+  .insta-tile:focus-visible {
+    --lift: -6px;
+    --zoom: 1.05;
+    z-index: 1;
+  }
+  .insta-tile:active {
+    --zoom: 0.97;
+  }
+  .insta-shine {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: radial-gradient(circle at var(--mx, 50%) var(--my, 30%), rgb(255 255 255 / 0.38), transparent 58%);
+    mix-blend-mode: soft-light;
+    opacity: 0;
+    transition: opacity 0.3s var(--ease-out-soft);
+  }
+  .insta-tile:hover .insta-shine {
+    opacity: 1;
+  }
+  .insta-badge {
+    position: absolute;
+    inset-inline-end: 0.6rem;
+    top: 0.6rem;
+    display: grid;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    border-radius: 999px;
+    opacity: 0;
+    transform: scale(0.6) rotate(-12deg);
+    transition:
+      opacity 0.25s var(--ease-out-soft),
+      transform 0.45s var(--ease-out-soft);
+    pointer-events: none;
+  }
+  .insta-badge svg {
+    width: 1.05rem;
+    height: 1.05rem;
+  }
+  .insta-tile:hover .insta-badge,
+  .insta-tile:focus-visible .insta-badge {
+    opacity: 1;
+    transform: none;
+  }
+  /* Phones and tablets have no hover: show the badge, keep the press effect */
+  @media (hover: none) {
+    .insta-badge {
+      opacity: 0.92;
+      transform: none;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .insta-tile,
+    .insta-tile:hover,
+    .insta-tile:focus-visible {
+      --rx: 0deg;
+      --ry: 0deg;
+      --lift: 0px;
+      --zoom: 1;
+    }
+  }
+  .insta-tile:hover,
+  .insta-tile:focus-visible {
+    box-shadow: 0 22px 40px -18px rgb(0 0 0 / 0.75);
+  }
+  .insta-badge {
+    background: rgb(18 11 8 / 0.78);
+    color: var(--color-amber);
+    backdrop-filter: blur(4px);
+  }
+}

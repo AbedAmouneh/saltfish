@@ -36,7 +36,6 @@ const fr = {
       visit: "Nous trouver",
       explore: "Explorer",
       rights: "Tous droits réservés.",
-      photos: "Photos : @saltfish.lb",
       madeBy: "Conçu et développé par",
     },
   },

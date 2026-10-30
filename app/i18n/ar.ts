@@ -36,7 +36,6 @@ const ar = {
       visit: "زورونا",
       explore: "اكتشف",
       rights: "جميع الحقوق محفوظة.",
-      photos: "الصور من ‎@saltfish.lb",
       madeBy: "تصميم وتطوير",
     },
   },

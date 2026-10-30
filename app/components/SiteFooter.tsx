@@ -77,7 +77,6 @@ export function SiteFooter() {
         <p>
           © {year} {site.name}. {t.common.footer.rights}
         </p>
-        <p>{t.common.footer.photos}</p>
       </div>
       {/* Extra bottom room so the floating "Ask Salty" button never covers the credit */}
       <div className="gutter container-x flex justify-center pt-2 pb-28 text-xs text-dusk md:pb-24">

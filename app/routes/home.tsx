@@ -1,4 +1,5 @@
 import { Link, type MetaFunction } from "react-router";
+import { InstaTile } from "~/components/InstaTile";
 import { Photo } from "~/components/Photo";
 import { Arrow, BranchCard, DishCard, SectionHeading, Ticker } from "~/components/ui";
 import { branches, events, menu, site } from "~/content";
@@ -170,7 +171,11 @@ export default function Home() {
 
       {/* STORY */}
       <section className="gutter container-x grid items-center gap-12 py-24 md:grid-cols-[1fr_1.1fr] md:py-32" aria-labelledby="story">
-        <Photo slug="the-crew-counter" sizes="(min-width: 1440px) 580px, (min-width: 768px) 43vw, 90vw" imgClassName="aspect-[4/5] w-full rounded-3xl object-cover" />
+        <Photo
+          slug="the-crew-counter"
+          sizes="(min-width: 1440px) 580px, (min-width: 768px) 43vw, 90vw"
+          imgClassName="aspect-[4/5] w-full rounded-3xl object-cover"
+        />
         <div className="grid gap-6">
           <p className="eyebrow">{t.home.story.eyebrow}</p>
           <h2 id="story" className="display text-[clamp(3rem,7vw,6rem)]">
@@ -196,13 +201,13 @@ export default function Home() {
         <ul className="mt-6 grid grid-cols-3 gap-2 md:grid-cols-6">
           {INSTAGRAM_STRIP.map((slug) => (
             <li key={slug}>
-              <a href={site.instagram} target="_blank" rel="noopener" className="block overflow-hidden rounded-xl">
+              <InstaTile href={site.instagram} className="overflow-hidden rounded-xl">
                 <Photo
                   slug={slug}
                   sizes="(min-width: 1440px) 205px, (min-width: 768px) 15vw, 30vw"
                   imgClassName="aspect-square w-full object-cover transition-transform duration-500 hover:scale-105"
                 />
-              </a>
+              </InstaTile>
             </li>
           ))}
         </ul>
